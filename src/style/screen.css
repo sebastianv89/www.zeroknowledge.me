@@ -1,0 +1,124 @@
+body {
+    color: #222;
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 0 .25em;
+}
+
+body > header {
+    border-bottom: 1px solid gray;
+}
+
+body > header a {
+    color: #222;
+    text-decoration: none;
+}
+
+body > header nav ul {
+    text-align: center;
+    padding-left: 0;
+    margin: 0;
+}
+
+body > header nav ul li {
+    display: inline;
+    margin: 0;
+}
+
+body > header nav ul li a {
+    display: inline-block;
+    padding: 1em .5em;
+}
+
+body > header nav a:hover {
+    text-decoration: underline;
+}
+
+#main h3 {
+    margin-top: 2em;
+}
+
+body > header h1,
+body > section header h2 {
+    margin-bottom: 0;
+}
+
+.subtitle {
+    margin-top: 0;
+}
+
+body > footer {
+    border-top: 1px solid gray;
+    font-size: smaller;
+}
+
+a[href$='.pdf']::after {
+    content: ' [pdf]';
+    font-size: smaller;
+}
+
+a[href^='mailto:']::after {
+    content: ' [✉]';
+    font-size: smaller;
+}
+
+a[href^='tel:']::after {
+    content: ' [☎]';
+    font-size: smaller;
+}
+
+address {
+    display: inline;
+}
+
+dt {
+    font-weight: bold;
+}
+
+:not(dd) > dl,
+.res {
+    margin-left: 1em;
+}
+
+ul.res {
+    list-style: none;
+    padding: 0;
+}
+
+ul.flatlist {
+    padding: 0;
+}
+
+ul.flatlist > li {
+    padding: 0;
+    display: inline;
+}
+
+ul.flatlist > li:not(:last-child)::after {
+    content: ', ';
+}
+
+#langlist > dt {
+    float: left;
+    min-width: 6em;
+    margin: 0;
+}
+
+#langlist > dd {
+    margin-left: 6em;
+}
+
+:not(dd) > dl > dt {
+    margin-top: 1em;
+}
+
+dd > dl > dt {
+    text-align: right;
+    float: left;
+    min-width: 7em;
+    margin-right: .5em;
+}
+
+dd > dl > dd {
+    margin-left: 7.5em;
+}
