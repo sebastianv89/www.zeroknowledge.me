@@ -98,16 +98,6 @@ ul.flatlist > li:not(:last-child)::after {
     content: ', ';
 }
 
-#langlist > dt {
-    float: left;
-    min-width: 6em;
-    margin: 0;
-}
-
-#langlist > dd {
-    margin-left: 6em;
-}
-
 :not(dd) > dl > dt {
     margin-top: 1em;
 }
