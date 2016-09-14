@@ -137,7 +137,6 @@ class AbsPath(argparse.Action):
 def main():
     global args
     root_dir = os.path.abspath(os.getcwd())
-    print(root_dir)
     ap = argparse.ArgumentParser()
 
     ap.add_argument('-s', '--source-dir', action=AbsPath,
