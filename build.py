@@ -6,12 +6,17 @@ import os
 import os.path
 import errno
 import time
+import thread
 import argparse
+import SimpleHTTPServer
+import SocketServer
 
 SRC_DIR = 'src'
 PUB_DIR = 'public'
 TMPL_DIR = 'templates'
 INDENT = 3
+
+PORT = 8000
 
 def write_page(pout, pin, tmpl, force, verbose):
     last_mod = os.path.getmtime(pin)
@@ -85,39 +90,72 @@ def build_dir(pub_dir, src_dir, tin, force, verbose):
         elif os.path.isfile(pin):
             write_page(pout, pin, tmpl, force, verbose)
 
-def clean_dir(pub_dir, force, verbose):
+def clean_dir(pub_dir, src_dir, force, verbose):
     for f in filter(lambda f: not f.startswith('.'), os.listdir(pub_dir)):
-        path = os.path.join(pub_dir, f)
-        if os.path.isdir(path):
-            clean_dir(path, force, verbose)
+        pin = os.path.join(src_dir, f)
+        pout = os.path.join(pub_dir, f)
+        if os.path.isdir(pout):
+            clean_dir(pout, pin, force, verbose)
             try:
-                os.rmdir(path)
+                os.rmdir(pout)
             except OSError as e:
                 if e.errno != errno.ENOTEMPTY:
                     raise
         else:
-            pin = os.path.join(SRC_DIR, os.path.relpath(path, PUB_DIR))
-            if not os.path.isfile(pin) or force:
+            if os.path.isdir(pin) or not os.path.exists(pin) or force:
                 if verbose >= 1:
-                    print('removing', path)
-                os.remove(path)
+                    print('removing', pout)
+                os.remove(pout)
+                
+def build(args):
+    clean_dir(args.publish_dir, args.source_dir, args.force, args.verbose);
+    build_dir(args.publish_dir, args.source_dir, None, args.force, args.verbose)
 
+def track_files(args):
+    while True:
+        build(args)
+        time.sleep(1)
+
+def server(args):
+    thread.start_new_thread(track_files, (args, ))
+
+    Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
+    httpd = SocketServer.TCPServer(('', PORT), Handler)
+    os.chdir(args.publish_dir)
+    print('Serving {} at http://localhost:{}/'.format(args.publish_dir, PORT))
+    try:
+        httpd.serve_forever()
+    except KeyboardInterrupt:
+        httpd.shutdown()
+    
+class AbsPath(argparse.Action):
+    def __call__(self, parser, namespace, values, option_string):
+        print('absaction.__call__')
+        print(namespace, values, option_string)
+        setattr(namespace, self.dest, os.path.abspath(values))
 
 def main():
     global args
+    root_dir = os.path.abspath(os.getcwd())
+    print(root_dir)
     ap = argparse.ArgumentParser()
+
+    ap.add_argument('-s', '--source-dir', action=AbsPath,
+                    default=os.path.abspath(os.path.join(root_dir, SRC_DIR)),
+                    help='set source directory')
+    ap.add_argument('-p', '--publish-dir', action=AbsPath,
+                    default=os.path.abspath(os.path.join(root_dir, PUB_DIR)),
+                    help='set publishing directory')
     ap.add_argument('-v', '--verbose', action='count', default=0,
                     help='increase output verbosity')
     ap.add_argument('-f', '--force', action='store_true',
-                    help='increase output verbosity')
-    args = ap.parse_args()
-    
-    root_dir = os.path.dirname(__file__)
-    src_dir = os.path.join(root_dir, SRC_DIR)
-    pub_dir = os.path.join(root_dir, PUB_DIR)
+                    help='force rebuild of all files')
+    ap.add_argument('--server', dest='func', action='store_const',
+                    const=server, default=build,
+                    help='run server for testing')
 
-    clean_dir(pub_dir, args.force, args.verbose);
-    build_dir(pub_dir, src_dir, None, args.force, args.verbose)
+    args = ap.parse_args()
+    args.func(args)
 
 if __name__ == '__main__':
     main()
