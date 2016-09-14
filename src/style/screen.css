@@ -63,7 +63,7 @@ a[href^='mailto:']::after {
 }
 
 a[href^='tel:']::after {
-    content: ' [☎]';
+    content: ' [☏]';
     font-size: smaller;
 }
 
