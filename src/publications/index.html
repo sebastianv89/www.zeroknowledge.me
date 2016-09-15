@@ -3,24 +3,153 @@
 </header>
 
 <h3 id="2016">2016</h3>
-<ul>
+<ul class="details-list">
   <li id="scimp">
-    <a href="/publications/scimp/">(In-)Secure messaging in mobile environments</a>
-    (with Tanja Lange)
+    <details>
+      <summary>
+        <h4>(In-)Secure messaging in mobile environments</h4>
+        <span class="subtitle">
+          <time>2016-07-13</time>,
+          <em>with <a href="https://hyperelliptic.org/tanja/">Tanja Lange</a></em>
+          [<a href="https://eprint.iacr.org/2016/703">preprint</a>]
+        </span>
+      </summary>
+      [<a href="https://github.com/sebastianv89/www.zeroknowledge.me/raw/master/pdf/publications/scimp.pdf">.pdf (mirror)</a>]
+      [.bib]
+      <h5>Abstract</h5>
+      <p>
+        Silent Text, the instant messaging application by the company
+        Silent Circle, provides its users with end-to-end encrypted
+        communication on the Blackphone and other smartphones. The
+        underlying protocol, SCimp, has received many extensions
+        during the update to version 2, but has not been subjected to
+        critical review from the cryptographic community. In this
+        paper, we analyze both the design and implementation of SCimp
+        by inspection of the documentation (to the extent it exists)
+        and code. Many of the security properties of SCimp version 1
+        are found to be secure, however many of the extensions contain
+        vulnerabilities and the implementation contains bugs that
+        affect the overall security. These problems were fed back to
+        the SCimp maintainers and some bugs were fixed in the code
+        base. In September 2015, Silent Circle replaced SCimp with a
+        new protocol based on the Signal Protocol.
+      </p> 
+      <h5>Keywords</h5>
+      <p>
+        Cryptographic Protocols, SCimp, Silent Circle, Instant Messaging Protocol
+      </p>
+    </details>
   </li>
+
   <li id="omemo">
-    <a href="/publications/omemo/">OMEMO: Cryptographic Analysis Report</a>
+    <details>
+      <summary>
+        <h4>OMEMO: Cryptographic Analysis Report</h4>
+        <span class="subtitle">
+          <time>2016-06-01</time>
+          [<a href="https://github.com/radicallyopensecurity/templates/blob/master/sample-report/REP_OMEMO-cryptoaudit-v10.pdf">report</a>]
+        </span>
+      </summary>
+      [<a href="https://github.com/sebastianv89/www.zeroknowledge.me/raw/master/pdf/publications/OMEMO-cryptoaudit-v10.pdf">.pdf (mirror)</a>]
+      [.bib]
+      <p>
+        The OMEMO protocol is a Jabber/XMPP implementation of the
+        Signal protocol.  The report contains the analysis the
+        cryptographic properties of the specification and conducts a
+        code-review of the reference implementation in the
+        Conversations application for Android.
+      </p> 
+      <p>
+        This assignment was carried out
+        for <a href="https://www.radicallyopensecurity.com/">Radically
+          Open Security</a> and the <!--<a href="">-->Pacific Research
+        Alliance<!--</a>-->.
+      </p> 
+    </details>
   </li>
+
   <li id="masters-thesis">
-    <a href="/publications/masters-thesis/">Secure messaging in mobile environments</a>,
-    master's thesis (supervisors: Tanja Lange and Daniel J. Bernstein)
+    <details>
+      <summary>
+        <h4>Secure messaging in mobile environments</h4>
+        <span class="subtitle">
+          <time>2016-01-25</time>
+          [<a href="http://repository.tue.nl/844313">Masters' thesis</a>]
+        </span>
+      </summary>
+      [<a href="https://github.com/sebastianv89/www.zeroknowledge.me/raw/master/pdf/publications/Kerckhoffs-MSc-2016_S-R-Verschoor.pdf">.pdf (mirror)</a>]
+      [bib (TODO)]
+      <h5>Abstract</h5>
+      <p>
+        Silent Text, the instant messaging application by the company
+        Silent Circle, provides its users with secure end-to-end
+        encrypted communication on the Blackphone and other
+        smartphones. The underlying protocol, SCimp, has received many
+        extensions during the update to version 2, but has not been
+        subjected to critical review from the cryptographic
+        community. In September 2015, Silent Circle replaced SCimp
+        with the TextSecure protocol in the Silent Phone
+        application. In my master thesis, I analyze both the design
+        and implementation of SCimp by inspection of the documentation
+        and code, and I build a formal model of the protocol using
+        Proverif. Many of the security properties provided by the core
+        protocol are proven in the formal model, however many of the
+        extensions contain vulnerabilities and the implementation
+        contains bugs that affect the overall security. A comparison
+        between SCimp and TextSecure highlights the improvements that
+        the latter has over the former.
+      </p> 
+      <h5>Keywords</h5>
+      <p>
+        SCimp, Instant Messaging, Smartphone, ECDHE, AES, CCM mode,
+        Silent Circle, TextSecure, Axolotl, Off the Record, C, Proverif
+      </p>
+      <h5>Supervisors</h5>
+      <ul>
+        <li>
+          <a href="https://hyperelliptic.org/tanja/">prof. dr. Tanja Lange</a>
+        </li>
+        <li>
+          <a href="https://cr.yp.to/djb.html">prof. dr. Daniel J. Bernstein</a>
+        </li>
+      </ul>
+    </details>
   </li>
 </ul>
 
 <h3 id="2012">2012</h3>
-<ul>
+<ul class="details-list">
   <li id="bachelors-thesis">
-    <a href="/publications/bachelors-thesis/">Analysis of the Euclidean Feature Transform algorithm</a>,
-    bachelor's thesis (supervisors: Gerard R. Renardel de Lavalette and Wim H. Hesselink)
+    <details>
+      <summary>
+        <h4>Analysis of the Euclidean Feature Transform algorithm</h4>
+        <span class="subtitle">
+          <time>2012-08-21</time>
+          [<a href="http://irs.ub.rug.nl/dbi/503b6b5f7fc75">Bachelor's thesis</a>]
+        </span>
+      </summary>
+      [<a href="https://github.com/sebastianv89/www.zeroknowledge.me/raw/master/pdf/publications/INF-BA-2012_S-R-Verschoor.pdf">.pdf (mirror)</a>]
+      [bib (TODO)]
+      <h5>Abstract</h5>
+      <p>
+        In this thesis I mechanically verify the correctness and
+        linear time complexity of the core of the Euclidean Feature
+        Transform (EFT) algorithm, using the proof assistant PVS. The
+        EFT algorithm computes the EFT function for a data grid of
+        arbitrary dimension. The EFT function calculates the set of
+        nearest "background" data points, for each data point in the
+        grid. The distance between data points is measured by the
+        standard Euclidean distance.
+      </p> 
+      <h5>Supervisors</h5>
+      <ol>
+        <li>
+          <a href="http://www.cs.rug.nl/~grl/">prof. dr. Gerard R. Renardel de Lavalette (primary supervisor)</a>
+        </li>
+        <li>
+          <a href="http://wimhesselink.nl/">prof. dr. Wim H. Hesselink (secondary supervisor)</a>
+        </li>
+      </ol>
+    </details>
   </li>
 </ul>
