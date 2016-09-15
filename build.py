@@ -130,8 +130,6 @@ def server(args):
     
 class AbsPath(argparse.Action):
     def __call__(self, parser, namespace, values, option_string):
-        print('absaction.__call__')
-        print(namespace, values, option_string)
         setattr(namespace, self.dest, os.path.abspath(values))
 
 def main():
