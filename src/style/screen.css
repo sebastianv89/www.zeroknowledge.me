@@ -70,6 +70,10 @@ dt {
     content: ', ';
 }
 
+ul li {
+    margin-bottom: 1ex;
+}
+
 ul.details-list {
     list-style-type: none;
     padding-left: 2em;
