@@ -98,3 +98,7 @@ ul.details-list h4 {
     padding-left: -2em;
     display: inline;
 }
+
+#license-icon {
+    float: right;
+}
