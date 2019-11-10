@@ -2,6 +2,91 @@
   <h2>List of publications</h2>
 </header>
 
+<h3 id="2019">2019</h3>
+<ul class="details-list">
+  <li id="quantum-sat">
+    <details>
+      <summary>
+        <h4>On speeding up factoring with quantum SAT solvers</h4>
+        <span class="subtitle">
+          <time>2019-10-21</time>,
+          <em>
+            with <a href="http://www.iqc.ca/~mmosca/">Michele Mosca</a>
+            and João Marcos Vensi Basso
+          </em>
+          [<a href="https://arxiv.org/abs/1910.09592">preprint</a>]
+        </span>
+      </summary>
+      [<a href="https://github.com/sebastianv89/www.zeroknowledge.me/raw/master/pdf/publications/nfs-sat.pdf">.pdf</a>]
+      [<a href="https://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1902-01448">bib (dblp)</a>]
+      [<a href="https://github.com/sebastianv89/NFS-SAT">code repository</a>]
+      <h5>Abstract</h5>
+      <p>
+        There have been several efforts to apply quantum SAT solving methods to
+        factor large integers. While these methods may provide insight into
+        quantum SAT solving, to date they have not led to a convincing path to
+        integer factorization that is competitive with the best known classical
+        method, the Number Field Sieve. Many of the techniques tried involved
+        directly encoding multiplication to SAT or an equivalent NP-hard
+        problem and looking for satisfying assignments of the variables
+        representing the prime factors. The main challenge in these cases is
+        that, to compete with the Number Field Sieve, the quantum SAT solver
+        would need to be superpolynomially faster than classical SAT solvers.
+        In this paper the use of SAT solvers is restricted to a smaller task
+        related to factoring: finding smooth numbers, which is an essential
+        step of the Number Field Sieve. We present a SAT circuit that can be
+        given to quantum SAT solvers such as annealers in order to perform this
+        step of factoring. If quantum SAT solvers achieve any speedup over
+        classical brute-force search, then our factoring algorithm is faster
+        than the classical NFS. 
+      </p> 
+    </details>
+  </li>
+
+  <li id="quantum-sat">
+    <details>
+      <summary>
+        <h4>Factoring semi-primes with (quantum) SAT-solvers</h4>
+        <span class="subtitle">
+          <time>2019-02-04</time>,
+          <em>with <a href="http://www.iqc.ca/~mmosca/">Michele Mosca</a></em>
+          [<a href="https://arxiv.org/abs/1902.01448">preprint</a>]
+        </span>
+      </summary>
+      [<a href="https://github.com/sebastianv89/www.zeroknowledge.me/raw/master/pdf/publications/qsat.pdf">.pdf</a> (v2 2019-10-23)]
+      [<a href="https://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1902-01448">bib (dblp)</a>]
+      [<a href="https://github.com/sebastianv89/factoring-sat">code repository</a>]
+      <h5>Abstract</h5>
+      <p>
+        The assumed computationally difficulty of factoring large integers
+        forms the basis of security for RSA public-key cryptography, which
+        specifically relies on products of two large primes or semi-primes. The
+        best-known factoring algorithms for classical computers run in
+        sub-exponential time. Since integer factorization is in NP, one can
+        reduce this problem to any NP-hard problem, such as Boolean
+        Satisfiability (SAT). While reducing factoring to SAT has proved to be
+        useful for studying SAT solvers, attempting to factor large integers
+        via such a reduction has not been found to be successful.
+      </p>
+      <p>
+        Shor's quantum factoring algorithm factors any integer in polynomial
+        time, although large-scale fault-tolerant quantum computers capable of
+        implementing Shor's algorithm are not yet available, so relevant
+        benchmarking experiments for factoring via Shor's algorithm are not yet
+        possible. In recent years, however, several authors have attempted
+        factorizations with the help of quantum processors via reductions to
+        NP-hard problems. While this approach may shed some light on some
+        algorithmic approaches for quantum solutions to NP-hard problems, in
+        this paper we study and question the practical effectiveness of this
+        approach for factoring large numbers. We find no evidence that this is
+        a viable path toward factoring large numbers, even for scalable
+        fault-tolerant quantum computers, as well as for various quantum
+        annealing or other special purpose quantum hardware. 
+      </p> 
+    </details>
+  </li>
+</ul>
+
 <h3 id="2017">2017</h3>
 <ul class="details-list">
   <li id="patent-search">
@@ -57,7 +142,7 @@
         </span>
       </summary>
       [<a href="https://github.com/sebastianv89/www.zeroknowledge.me/raw/master/pdf/publications/scimp.pdf">.pdf (mirror)</a>]
-      [<a href="http://dblp.uni-trier.de/rec/bibtex/journals/iacr/VerschoorL16">.bib</a>]
+      [<a href="http://dblp.uni-trier.de/rec/bibtex/journals/iacr/VerschoorL16">bib (dblp)</a>]
       <h5>Abstract</h5>
       <p>
         Silent Text, the instant messaging application by the company
