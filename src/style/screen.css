@@ -98,6 +98,14 @@ ul.details-list h4 {
     display: inline;
 }
 
-#license-icon {
+footer {
+    vertical-align: middle;
+    display: inline-block;
+    width: 100%;
+}
+
+#ssllabs-badge, #license-icon {
+    margin-top: 1ex;
+    margin-left: .5em;
     float: right;
 }
