@@ -33,21 +33,21 @@ def write_page(pout, pin, tmpl, force, verbose):
         except OSError:
             if not os.path.isdir(dout):
                 raise
-        with open(pout, 'w') as fout:
+        with open(pout, 'w', encoding='utf-8') as fout:
             if verbose >= 1:
                 print('writing', pout)
             if pout.endswith('.html'):
                 if verbose >= 2:
                     print('  = ', (tmpl.phead, pin, tmpl.pfoot))
                 fout.write(tmpl.head)
-                with open(pin) as fin:
+                with open(pin, encoding='utf-8') as fin:
                     for line in fin:
                         fout.write('  ' * INDENT + line)
                 fout.write(tmpl.foot.replace('<!--LAST_MODIFIED-->', lm_str, 1))
             else:
                 if verbose >= 2:
                     print('  = ', pin)
-                with open(pin) as fin:
+                with open(pin, encoding='utf-8') as fin:
                     fout.write(fin.read())
     elif verbose >= 2:
         print('skipping', pout)
@@ -61,7 +61,7 @@ def set_tmpl(path, tin=None):
     phead = os.path.join(path, TMPL_DIR, 'head.html')
     if os.path.isfile(phead):
         tout.phead = phead
-        with open(phead) as f:
+        with open(phead, encoding='utf-8') as f:
             tout.head = f.read()
         tout.time = max(tout.time, os.path.getmtime(phead))
     else:
@@ -70,7 +70,7 @@ def set_tmpl(path, tin=None):
     pfoot = os.path.join(path, TMPL_DIR, 'foot.html')
     if os.path.isfile(pfoot):
         tout.pfoot = pfoot
-        with open(pfoot) as f:
+        with open(pfoot, encoding='utf-8') as f:
             tout.foot = f.read()
         tout.time = max(tout.time, os.path.getmtime(pfoot))
     else:
