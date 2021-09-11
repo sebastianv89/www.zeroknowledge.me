@@ -1,15 +1,13 @@
-#!/usr/bin/env python
-
-from __future__ import print_function
+#!/usr/bin/env python3
 
 import os
 import os.path
 import errno
+import http.server
+import socketserver
 import time
-import thread
+import _thread
 import argparse
-import SimpleHTTPServer
-import SocketServer
 
 SRC_DIR = 'src'
 PUB_DIR = 'public'
@@ -117,16 +115,16 @@ def track_files(args):
         time.sleep(1)
 
 def server(args):
-    thread.start_new_thread(track_files, (args, ))
+    _thread.start_new_thread(track_files, (args, ))
 
-    Handler = SimpleHTTPServer.SimpleHTTPRequestHandler
-    httpd = SocketServer.TCPServer(('', PORT), Handler)
     os.chdir(args.publish_dir)
-    print('Serving {} at http://localhost:{}/'.format(args.publish_dir, PORT))
-    try:
-        httpd.serve_forever()
-    except KeyboardInterrupt:
-        httpd.shutdown()
+    handler = http.server.SimpleHTTPRequestHandler
+    with socketserver.TCPServer(('', PORT), handler) as httpd:
+        print('Serving {} at http://localhost:{}/'.format(args.publish_dir, PORT))
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            httpd.shutdown()
     
 class AbsPath(argparse.Action):
     def __call__(self, parser, namespace, values, option_string):
