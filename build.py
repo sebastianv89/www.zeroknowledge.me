@@ -8,6 +8,7 @@ import socketserver
 import time
 import _thread
 import argparse
+import shutil
 
 SRC_DIR = 'src'
 PUB_DIR = 'public'
@@ -33,22 +34,20 @@ def write_page(pout, pin, tmpl, force, verbose):
         except OSError:
             if not os.path.isdir(dout):
                 raise
-        with open(pout, 'w', encoding='utf-8') as fout:
-            if verbose >= 1:
-                print('writing', pout)
-            if pout.endswith('.html'):
-                if verbose >= 2:
-                    print('  = ', (tmpl.phead, pin, tmpl.pfoot))
+        if verbose >= 1:
+            print('writing', pout)
+        if verbose >= 2:
+            print('  = ', pin)
+        if os.path.splitext(pout)[1] == ".html":
+            with open(pout, 'w', encoding='utf-8') as fout:
                 fout.write(tmpl.head)
                 with open(pin, encoding='utf-8') as fin:
                     for line in fin:
                         fout.write('  ' * INDENT + line)
                 fout.write(tmpl.foot.replace('<!--LAST_MODIFIED-->', lm_str, 1))
-            else:
-                if verbose >= 2:
-                    print('  = ', pin)
-                with open(pin, encoding='utf-8') as fin:
-                    fout.write(fin.read())
+        else:
+            shutil.copyfile(pin, pout)
+
     elif verbose >= 2:
         print('skipping', pout)
     
