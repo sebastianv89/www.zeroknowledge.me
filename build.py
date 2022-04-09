@@ -45,9 +45,10 @@ def write_page(pout, pin, tmpl, force, verbose):
                     for line in fin:
                         fout.write('  ' * INDENT + line)
                 fout.write(tmpl.foot.replace('<!--LAST_MODIFIED-->', lm_str, 1))
+        elif os.path.splitext(pout)[1] == ".raw":
+            shutil.copyfile(pin, os.path.splitext(pout)[0])
         else:
             shutil.copyfile(pin, pout)
-
     elif verbose >= 2:
         print('skipping', pout)
     

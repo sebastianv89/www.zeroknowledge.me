@@ -1,0 +1,314 @@
+<!doctype html>
+<html manifest="./jassen.manifest">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<link rel="icon" href="data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='100'>♣</text></svg>">
+		<link rel="apple-touch-icon" href="img/clubs.png">
+		<title>Scoreblok Klaverjassen</title>
+
+			<style>
+				table { width: 100%; border-collapse: collapse; }
+				td:first-child::before { content: '0'; visibility: hidden; }
+				/* table borders */
+				td:first-child,
+				th:first-child,
+				tbody td:nth-child(3),
+				thead tr:first-child th:nth-child(2),
+				thead tr:last-child th:nth-child(3),
+				tfoot td:nth-child(2) { 
+					border-right: 1px solid black;
+				}
+				thead tr:last-child th:nth-child(2n+2),
+				tbody td:nth-child(2n+2)
+				{
+					border-right: 1px solid #ccc;
+				}
+				thead tr:last-child th { border-bottom: 1px solid black; }
+				tfoot tr:first-child td { border-top: 1px solid black; }
+				/* table background */
+				tbody tr:nth-child(5n+2), tbody tr:nth-child(5n+4) { background-color: #eee; }
+				table tr:nth-child(5n) { background-color: #ddd; }
+				/* cell layout */
+				tbody td { text-align: right; }
+				tfoot td:first-child { text-align: right; }
+				tfoot td:not(:first-child) { text-align: center; font-weight: bold; }
+			</style>
+
+			<script>
+
+function colIndex(cell) {
+	let y = 0;
+	while (cell.previousElementSibling !== null) {
+		cell = cell.previousElementSibling;
+		y += 1;
+	}
+	return y;
+}
+
+function rowIndex(cell) {
+	let x = 0;
+	let row = cell.parentElement;
+	while (row.previousElementSibling !== null) {
+		row = row.previousElementSibling;
+		x += 1;
+	}
+	return x;
+}
+
+function initFromStorage() {
+}
+
+function clearStorage() {
+
+}
+
+function updateSums() {
+	const rows = document.querySelector('tbody').children;
+	let fullScore = true;
+	let points = [0, 0, 0, 0];
+	for (let z = 0; z < 4 && fullScore; z += 1) {
+		for (let y = 0; y < 4; y += 1) {
+			if (rows[5*z + y].children[1].textContent === "") {
+				fullScore = false;
+				break;
+			}
+			for (let x = 0; x < 4; x += 1) {
+				points[x] += Number(rows[5*z + y].children[x + 1].textContent);
+			}
+		}
+		for (let x = 0; x < 4 && fullScore; x += 1) {
+			rows[5*z + 4].children[x + 1].textContent = points[x];
+		}
+	}
+	if (fullScore) {
+		const totals = document.querySelector('tfoot tr').children;
+		totals[1].textContent = points[0] + points[1];
+		totals[2].textContent = points[2] + points[3];
+	} else {
+	}
+}
+
+function updatePoints(event) {
+	const cell = event.target;
+	const points = Number(cell.textContent);
+	const y = colIndex(cell);
+	const row = cell.parentElement;
+	if (y === 1) {
+		row.children[3].textContent = 162 - points;
+	} else if (y === 3) {
+		row.children[1].textContent = 162 - points;
+	}
+	updateSums();
+}
+
+function focusCell(event) {
+	window.getSelection().selectAllChildren(event.target);
+}
+
+function blurCell(event) {
+	window.getSelection().removeAllRanges();
+}
+
+function reset() {
+	clearStorage();
+	for (const cell of document.querySelectorAll('td:not(:first-child)')) {
+		cell.textContent = "";
+	}
+	updateSums();
+}
+
+function fullScreen() {
+	if (!document.fullscreenElement){
+		document.body.requestFullscreen();
+	} else {
+		document.exitFullscreen();
+	}
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+	initFromStorage();
+	for (let cell of document.querySelectorAll('tbody tr:not(.sum) td:not(:first-child)')) {
+		cell.addEventListener('focus', focusCell);
+		cell.addEventListener('blur', blurCell);
+	}
+	for (let cell of document.querySelectorAll('tbody td')) {
+		cell.addEventListener('input', updatePoints);
+	}
+	document.getElementById('reset').addEventListener('click', reset);
+});
+
+			</script>
+	</head>
+
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th></th>
+					<th colspan=2>Wij</th>
+					<th colspan=2>Zij</th>
+				</tr>
+				<tr>
+					<th></th>
+					<th>Punten</th>
+					<th>Roem</th>
+					<th>Punten</th>
+					<th>Roem</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>9</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>13</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td></td>
+					<td colspan=2></td>
+					<td colspan=2></td>
+				</tr>
+			</tfoot>
+		</table>
+		<button type="button" id="reset">Nieuw spel</button>
+	</body>
+
+</html>
