@@ -1,0 +1,132 @@
+let playerCount = 2;
+let rowCount = 1;
+
+function htmlElement(html) {
+	const template = document.createElement('template');
+	template.innerHTML = html.trim();
+	return template.content.firstChild;
+}
+
+function bodyCell() {
+	let inputMode;
+	if (document.getElementById('negativeScores').checked) {
+		inputMode = "text";
+	} else {
+		inputMode = "decimal";
+	}
+	console.log(inputMode);
+	const td = htmlElement('<td contenteditable="true" inputmode="' + inputMode + '"></td>');
+	td.addEventListener('focus', focusCell);
+	td.addEventListener('blur', blurCell);
+	return td;
+}
+
+function updateSums() {
+	let sums = [];
+	for (let x = 0; x < playerCount; x += 1) {
+		sums.push(0);
+	}
+
+	for (const row of document.querySelectorAll('tbody tr')) {
+		for (let x = 0; x < playerCount; x += 1) {
+			sums[x] += Number(row.children[x + 1].textContent);
+		}
+	}
+
+	const totals = document.querySelector('tfoot tr:last-child').children;
+	for (let x = 0; x < playerCount; x += 1) {
+		totals[x + 1].textContent = sums[x];
+	}
+}
+
+function addRow() {
+	rowCount += 1;
+	const tbody = document.querySelector('tbody');
+	const nextRow = htmlElement('<tr><td>' + rowCount + '</td></tr>');
+	for (let i = 0; i < playerCount; i += 1) {
+		nextRow.appendChild(bodyCell());
+	}
+	tbody.appendChild(nextRow);
+	nextRow.children[1].focus();
+}
+
+function addPlayer() {
+	playerCount += 1;
+
+	// update header
+	const th = htmlElement('<th contenteditable="true">Player ' + playerCount + '</th>');
+	th.addEventListener('focus', focusCell);
+	th.addEventListener('blur', blurCell);
+	const headerRow = document.querySelector('thead tr');
+	headerRow.appendChild(th);
+	th.focus();
+
+	// update body
+	const rows = document.querySelectorAll('tbody tr');
+	for (let row of rows) {
+		row.appendChild(bodyCell());
+	}
+
+	// update footer
+	document.querySelector('tfoot tr').appendChild(htmlElement('<td></td>'));
+
+	updateSums();
+}
+
+function removeLastPlayer() {
+	playerCount -= 1;
+
+	document.querySelector('thead th:last-child').remove();
+	for (const cell of document.querySelectorAll('tbody td:last-child')) {
+		cell.remove();
+	}
+	const addRowCell = document.querySelector('tfoot tr:first-child td');
+	addRowCell.colSpan = playerCount + 1;
+	document.querySelector('tfoot tr:last-child td:last-child').remove();
+}
+
+function toggleNegativeScores() {
+	const allowed = document.getElementById('negativeScores').checked;
+	for (const cell of document.querySelectorAll('tbody td:not(:first-child)')) {
+		if (allowed) {
+			cell.inputMode = "text";
+		} else {
+			cell.inputMode = "decimal";
+		}
+	}
+}
+
+function focusHead(event) {
+	window.getSelection.selectAllChildren(event.target);
+}
+
+function focusCell(event) {
+	window.getSelection().selectAllChildren(event.target);
+}
+
+function blurCell(event) {
+	window.getSelection().removeAllRanges();
+}
+
+function reset() {
+	if (window.confirm("Reset all scores?")) {
+		for (const cell of document.querySelectorAll('tbody td:not(:first-child)')) {
+			cell.textContent = "";
+		}
+		updateSums();
+	}
+}
+
+window.addEventListener('DOMContentLoaded', function() {
+	document.getElementById('addPlayer').addEventListener('click', addPlayer);
+	document.getElementById('removePlayer').addEventListener('click', removeLastPlayer);
+	document.getElementById('addRow').addEventListener('click', addRow);
+	document.getElementById('negativeScores').addEventListener('change', toggleNegativeScores);
+	toggleNegativeScores();
+	document.getElementById('reset').addEventListener('click', reset);
+	document.querySelector('tbody').addEventListener('input', updateSums);
+	for (let cell of document.querySelectorAll('tbody td, thead th')) {
+		cell.addEventListener('focus', focusCell);
+		cell.addEventListener('blur', blurCell);
+	}
+});

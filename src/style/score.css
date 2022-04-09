@@ -1,0 +1,14 @@
+table { width: 100%; border-collapse: collapse; }
+td { text-align: right; }
+
+/* table borders */
+th:not(:last-child), td:not(:last-child) { border-right: 1px solid black; }
+tbody tr:first-child { border-top: 1px solid black; }
+tbody tr:last-child { border-bottom: 1px solid black; }
+
+/* table background */
+tbody tr:nth-child(even) { background-color: #eee; }
+tfoot { background-color: #ddd; }
+
+/* cell layout */
+tfoot td:not(:first-child) { text-align: center; font-weight: bold; }
