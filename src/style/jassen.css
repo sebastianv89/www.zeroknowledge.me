@@ -1,4 +1,7 @@
-table { width: 100%; border-collapse: collapse; }
+table { width: 100%; border-collapse: collapse; table-layout: fixed;}
+th:first-child { width: 4.5ch; }
+th { min-width: 3ch; }
+#menu { width: 100%; }
 td:first-child::before { content: '0'; visibility: hidden; }
 
 /* table borders */

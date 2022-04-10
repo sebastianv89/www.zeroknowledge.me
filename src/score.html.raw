@@ -1,12 +1,13 @@
 <!doctype html>
-<html manifest="./score.manifest">
+<!--<html manifest="./score.manifest">-->
+<html>
 	<head>
 		<meta charset="utf-8">
 		<title>Score</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!--<meta name="apple-mobile-web-app-capable" content="yes">-->
 		<link rel="icon" href="data:image/svg+xml, <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='100'>🗒</text></svg>">
-		<link rel="apple-touch-icon" href="img/score.png">
+		<!--<link rel="apple-touch-icon" href="img/score.png">-->
 		<link rel="stylesheet" href="style/score.css">
 		<script src="js/score.js"></script>
 	</head>
@@ -14,33 +15,34 @@
 	<body>
 		<table>
 			<thead>
-				<tr>
-					<th></th>
+				<tr spellcheck="false">
+					<th><button type="button" id="menu">≡</button></th>
 					<th contenteditable="true">Player 1</th>
 					<th contenteditable="true">Player 2</th>
 				</tr>
 			</thead>
-			<tbody inputmode="decimal">
+			<tbody>
 				<tr>
 					<td>1</td>
-					<td contenteditable="true"></td>
-					<td contenteditable="true"></td>
+					<td contenteditable="true" inputmode="decimal"></td>
+					<td contenteditable="true" inputmode="decimal"></td>
 				</tr>
 			</tbody>
 			<tfoot>
-				<tr><td>Σ</td><td></td><td></td></tr>
+				<tr><td>Σ</td><td>0</td><td>0</td></tr>
 			</tfoot>
 		</table>
-		<p>
-			<button type="button" id="addRow">Add row</button><br>
-			<button type="button" id="addPlayer">Add player</buttn>
-			<button type="button" id="removePlayer">Remove last player</button><br>
-			<input type="checkbox" id="negativeScores">
-			<label for="negativeScores">Allow negative scores</label>
-		</p>
-		<p>
-			<button type="button" id="reset">New game</button>
-		</p>
+		<dialog>
+			<form method="dialog">
+				<p>
+					<input type="number" inputmode="numeric" id="playerCount" min="1">
+					<label for="playerCount"># players</label>
+				</p>
+				<p>
+					<button id="reset">New game</button>
+				</p>
+			</form>
+		</dialog>
 	</body>
 
 </html>

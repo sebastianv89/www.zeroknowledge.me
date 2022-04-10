@@ -7,16 +7,6 @@ function colIndex(cell) {
 	return y;
 }
 
-function rowIndex(cell) {
-	let x = 0;
-	let row = cell.parentElement;
-	while (row.previousElementSibling !== null) {
-		row = row.previousElementSibling;
-		x += 1;
-	}
-	return x;
-}
-
 function updateSums() {
 	const rows = document.querySelector('tbody').children;
 	let fullScore = true;
@@ -62,21 +52,64 @@ function focusCell(event) {
 
 function blurCell(event) {
 	window.getSelection().removeAllRanges();
+	storeScores();
 }
 
 function reset() {
-	for (const cell of document.querySelectorAll('td:not(:first-child)')) {
-		cell.textContent = "";
+	if (window.confirm("Scores verwijderen?")) {
+		for (const cell of document.querySelectorAll('td:not(:first-child)')) {
+			cell.textContent = "";
+		}
+		storeScores();
+		updateSums();
 	}
-	updateSums();
 }
 
-function fullScreen() {
-	if (!document.fullscreenElement){
-		document.body.requestFullscreen();
-	} else {
-		document.exitFullscreen();
+function menu() {
+	document.querySelector('dialog').showModal();
+}
+
+function exitDialog(event) {
+	const dialog = document.querySelector('dialog');
+	const rect = dialog.getBoundingClientRect();
+	if (event.clientY < rect.top || rect.bottom < event.clientY || event.clientX < rect.left || rect.right < event.clientY) {
+		dialog.close();
 	}
+}
+
+function storeScores() {
+	let scores = [];
+	for (const tr of document.querySelectorAll('tbody tr')) {
+		if (tr.firstElementChild.textContent === "") {
+			continue;
+		}
+		let row = [];
+		for (const cell of tr.querySelectorAll('td:not(:first-child)')) {
+			if (cell.textContent === "") {
+				row.push("");
+			} else {
+				row.push(Number(cell.textContent));
+			}
+		}
+		scores.push(row);
+	}
+	console.log('storing', scores);
+	localStorage.setItem('jassen', JSON.stringify(scores));
+}
+
+function loadStorage() {
+	const scores = JSON.parse(localStorage.getItem('jassen'));
+	console.log('loaded', scores);
+	if (scores !== null) {
+		const tbody = document.querySelector('tbody');
+		for (let y = 0; y < scores.length; y += 1) {
+			const tr = tbody.children[y + Math.floor(y/4)];
+			for (let x = 0; x < 4; x += 1) {
+				tr.children[x + 1].textContent = scores[y][x];
+			}
+		}
+	}
+	updateSums();
 }
 
 window.addEventListener('DOMContentLoaded', function() {
@@ -84,8 +117,11 @@ window.addEventListener('DOMContentLoaded', function() {
 		cell.addEventListener('focus', focusCell);
 		cell.addEventListener('blur', blurCell);
 	}
-	for (let cell of document.querySelectorAll('tbody td')) {
-		cell.addEventListener('input', updatePoints);
-	}
+	document.querySelector('tbody').addEventListener('input', updatePoints);
+
+	document.getElementById('menu').addEventListener('click', menu);
+	document.querySelector('dialog').addEventListener('click', exitDialog);
 	document.getElementById('reset').addEventListener('click', reset);
+
+	loadStorage();
 });

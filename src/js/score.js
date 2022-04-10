@@ -1,3 +1,7 @@
+// FIXME It is rapidly becoming a mess where in the code to update cells/store data
+// instead it would be nice to have a single (global?) object that can be rendered (partially or fully)
+// and that automatically stores/loads data as well when it changes
+
 let playerCount = 2;
 let rowCount = 1;
 
@@ -8,14 +12,7 @@ function htmlElement(html) {
 }
 
 function bodyCell() {
-	let inputMode;
-	if (document.getElementById('negativeScores').checked) {
-		inputMode = "text";
-	} else {
-		inputMode = "decimal";
-	}
-	console.log(inputMode);
-	const td = htmlElement('<td contenteditable="true" inputmode="' + inputMode + '"></td>');
+	const td = htmlElement('<td contenteditable="true" inputmode="decimal"></td>');
 	td.addEventListener('focus', focusCell);
 	td.addEventListener('blur', blurCell);
 	return td;
@@ -41,35 +38,32 @@ function updateSums() {
 
 function addRow() {
 	rowCount += 1;
-	const tbody = document.querySelector('tbody');
 	const nextRow = htmlElement('<tr><td>' + rowCount + '</td></tr>');
 	for (let i = 0; i < playerCount; i += 1) {
 		nextRow.appendChild(bodyCell());
 	}
-	tbody.appendChild(nextRow);
-	nextRow.children[1].focus();
+	document.querySelector('tbody').appendChild(nextRow);
+}
+
+function cellInput(event) {
+	if (event.target.parentElement.firstElementChild.textContent === rowCount.toString()) {
+		addRow();
+	}
+	updateSums();
 }
 
 function addPlayer() {
 	playerCount += 1;
 
-	// update header
 	const th = htmlElement('<th contenteditable="true">Player ' + playerCount + '</th>');
 	th.addEventListener('focus', focusCell);
 	th.addEventListener('blur', blurCell);
-	const headerRow = document.querySelector('thead tr');
-	headerRow.appendChild(th);
+	document.querySelector('thead tr').appendChild(th);
 	th.focus();
-
-	// update body
-	const rows = document.querySelectorAll('tbody tr');
-	for (let row of rows) {
+	for (const row of document.querySelectorAll('tbody tr')) {
 		row.appendChild(bodyCell());
 	}
-
-	// update footer
 	document.querySelector('tfoot tr').appendChild(htmlElement('<td></td>'));
-
 	updateSums();
 }
 
@@ -80,53 +74,119 @@ function removeLastPlayer() {
 	for (const cell of document.querySelectorAll('tbody td:last-child')) {
 		cell.remove();
 	}
-	const addRowCell = document.querySelector('tfoot tr:first-child td');
-	addRowCell.colSpan = playerCount + 1;
-	document.querySelector('tfoot tr:last-child td:last-child').remove();
+	document.querySelector('tfoot td:last-child').remove();
 }
 
-function toggleNegativeScores() {
-	const allowed = document.getElementById('negativeScores').checked;
-	for (const cell of document.querySelectorAll('tbody td:not(:first-child)')) {
-		if (allowed) {
-			cell.inputMode = "text";
-		} else {
-			cell.inputMode = "decimal";
-		}
+function setPlayerCount(newCount) {
+	while (playerCount > newCount) {
+		removeLastPlayer();
 	}
+	while (playerCount < newCount) {
+		addPlayer();
+	}
+	storePlayers();
 }
 
-function focusHead(event) {
-	window.getSelection.selectAllChildren(event.target);
+function changePlayerCount(event) {
+	setPlayerCount(event.target.value)
 }
 
 function focusCell(event) {
 	window.getSelection().selectAllChildren(event.target);
 }
 
+function storePlayers() {
+	let players = [];
+	for (const cell of document.querySelectorAll('thead tr th:not(:first-child)')) {
+		players.push(cell.textContent);
+	}
+	localStorage.setItem('players', JSON.stringify(players));
+}
+
+function storeScores() {
+	let scores = [];
+	for (const tr of document.querySelectorAll('tbody tr:not(:last-child)')) {
+		let row = [];
+		for (const cell of tr.querySelectorAll('td:not(:first-child)')) {
+			if (cell.textContent === "") {
+				row.push("");
+			} else {
+				row.push(Number(cell.textContent));
+			}
+		}
+		scores.push(row);
+	}
+	localStorage.setItem('scores', JSON.stringify(scores));
+}
+
 function blurCell(event) {
 	window.getSelection().removeAllRanges();
+	if (event.target.tagName === 'TH') {
+		storePlayers();
+	} else if (event.target.tagName == 'TD') {
+		storeScores();
+	}
 }
 
 function reset() {
 	if (window.confirm("Reset all scores?")) {
-		for (const cell of document.querySelectorAll('tbody td:not(:first-child)')) {
-			cell.textContent = "";
-		}
+		document.querySelector('tbody').textContent = "";
+		rowCount = 0;
+		addRow();
 		updateSums();
+		storeScores();
 	}
 }
 
+function menu() {
+	document.querySelector('dialog').showModal();
+}
+
+function exitDialog(event) {
+	const dialog = document.querySelector('dialog');
+	const rect = dialog.getBoundingClientRect();
+	if (event.clientY < rect.top || rect.bottom < event.clientY || event.clientX < rect.left || rect.right < event.clientY) {
+		dialog.close();
+	}
+}
+
+function loadStorage() {
+	const players = JSON.parse(localStorage.getItem('players'));
+	if (players !== null) {
+		document.getElementById('playerCount').value = players.length;
+		setPlayerCount(players.length);
+		const headCells = document.querySelectorAll('thead tr th:not(:first-child)');
+		for (let i = 0; i < playerCount; i += 1) {
+			headCells[i].textContent = players[i];
+		}
+		storePlayers();
+	}
+
+	const scores = JSON.parse(localStorage.getItem('scores'));
+	if (scores !== null) {
+		const tbody = document.querySelector('tbody');
+		for (let y = 0; y < scores.length; y += 1) {
+			addRow();
+			const tr = tbody.children[y];
+			for (let x = 0; x < scores[y].length; x += 1) {
+				tr.children[x + 1].textContent = scores[y][x];
+			}
+		}
+	}
+	updateSums();
+}
+
 window.addEventListener('DOMContentLoaded', function() {
-	document.getElementById('addPlayer').addEventListener('click', addPlayer);
-	document.getElementById('removePlayer').addEventListener('click', removeLastPlayer);
-	document.getElementById('addRow').addEventListener('click', addRow);
-	document.getElementById('negativeScores').addEventListener('change', toggleNegativeScores);
-	toggleNegativeScores();
-	document.getElementById('reset').addEventListener('click', reset);
-	document.querySelector('tbody').addEventListener('input', updateSums);
-	for (let cell of document.querySelectorAll('tbody td, thead th')) {
+	document.querySelector('tbody').addEventListener('input', cellInput);
+	for (let cell of document.querySelectorAll('tbody td:not(:first-child), thead th')) {
 		cell.addEventListener('focus', focusCell);
 		cell.addEventListener('blur', blurCell);
 	}
+
+	document.getElementById('menu').addEventListener('click', menu);
+	document.querySelector('dialog').addEventListener('click', exitDialog);
+	document.getElementById('playerCount').addEventListener('change', changePlayerCount);
+	document.getElementById('reset').addEventListener('click', reset);
+
+	loadStorage();
 });
