@@ -1,4 +1,5 @@
 table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+th:not(:first-child) { position: sticky; top: 0; }
 th:first-child { width: 4.5ch; }
 #menu { width: 100%; }
 
@@ -8,8 +9,7 @@ tbody tr:first-child { border-top: 1px solid black; }
 tbody tr:last-child { border-bottom: 1px solid black; }
 
 /* table background */
-tbody tr:nth-child(even) { background-color: #eee; }
-tfoot tr { background-color: #ddd; }
+tbody tr:nth-child(odd) { background-color: #eee; }
 
 /* cell layout */
 tbody td { text-align: right; }
