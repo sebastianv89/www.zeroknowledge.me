@@ -1,3 +1,30 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #fff;
+        background-color: #000;
+    }
+
+    main a:link, footer a:link { 
+        color: #47f;
+    }
+
+    main a:visited, footer a:visited {
+        color: #83d;
+    }
+
+    body > header h1 a .fade {
+        opacity: .2;
+        transition: opacity .5s ease-in-out;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body > header h1 a .fade {
+        opacity: .05;
+        transition: opacity .5s ease-in-out;
+    }
+}
+
 body {
     max-width: 40em;
     margin: auto;
@@ -7,11 +34,6 @@ body {
 body > header a {
     color: inherit;
     text-decoration: none;
-}
-
-body > header h1 a .fade {
-    opacity: .05;
-    transition: opacity .5s ease-in-out;
 }
 
 body > header h1 a:hover .fade,
@@ -53,10 +75,9 @@ body > footer {
     font-size: smaller;
 }
 
-:target summary,
 li:target,
 dt:target {
-    background-color: #ffc;
+    background-color: #ff04;
 }
 
 dl {
