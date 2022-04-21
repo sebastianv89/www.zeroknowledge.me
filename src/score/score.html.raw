@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Scoreblok</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="/score/score.png">
+		<link rel="stylesheet" href="/score/score.css">
+		<script src="/score/score.js"></script>
+	</head>
+	<body>
+		<table id="scorepad">
+			<thead spellcheck="false">
+				<tr>
+					<th><button type="button" id="showMenu">≡</button></th>
+					<th contenteditable="true">Speler 1</th>
+					<th contenteditable="true">Speler 2</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td></td>
+					<td contenteditable="true" inputmode="decimal"></td>
+					<td contenteditable="true" inputmode="decimal"></td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr><td>Σ</td><td>0</td><td>0</td></tr>
+			</tfoot>
+		</table>
+		<dialog id="menu">
+			<form method="dialog">
+				<p>
+					Kopieer de link, of klik op delen.<br>
+					<input id="shareUrl" value="https://zeroknowledge.me/score/score.html">
+					<button id="share">Delen</button>
+				</p>
+				<p>
+					<input type="number" inputmode="numeric" id="playerCount" min="1" value="2">
+					<label for="playerCount">spelers</label>
+				</p>
+				<p>
+					<button id="new">Nieuw spel </button>
+				</p>
+			</form>
+		</dialog>
+	</body>
+</html>
