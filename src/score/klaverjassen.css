@@ -1,0 +1,29 @@
+table { width: 100%; height: 100%; border-collapse: collapse; table-layout: fixed;}
+thead th { height: 100%; }
+thead button { width: 100%; height: 100%; }
+th:first-child { width: 4ch; }
+th { min-width: 3ch; }
+th:empty::before,
+td:empty::before {
+  content: '0'; visibility: hidden;
+}
+tbody td { text-align: right; }
+tfoot { text-align: center; font-weight: bold; }
+
+tbody tr:nth-child(5n+2),
+tbody tr:nth-child(5n+4) {
+  background-color: #eee;
+}
+tbody tr:nth-child(5n) { background-color: #ddd; }
+.invalid { background-color: #fcc; }
+
+thead { border-bottom: 1px solid #000; }
+tfoot { border-top: 1px solid #000; }
+th:not(:last-child),
+td:not(:last-child) {
+  border-right: 1px solid #000;
+}
+thead tr:last-child th:nth-child(odd),
+tbody td:nth-child(even) {
+  border-right: 1px solid #ccc;
+}

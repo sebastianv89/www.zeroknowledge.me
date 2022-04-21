@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Scoreblok klaverjassen</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="/score/klaverjassen.png">
+		<link rel="stylesheet" href="/score/klaverjassen.css">
+		<script src="/score/klaverjassen.js"></script>
+	</head>
+	<body>
+		<table id="scorepad">
+			<thead>
+				<tr>
+					<th rowspan="2"><button type="button" id="showMenu">≡</button></th>
+					<th colspan="2" contenteditable="true">Wij</th>
+					<th colspan="2" contenteditable="true">Zij</th>
+				</tr>
+				<tr>
+					<th>Punten</th>
+					<th>Roem</th>
+					<th>Punten</th>
+					<th>Roem</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr>
+					<td>5</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>8</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr>
+					<td>9</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>10</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>11</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>12</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr>
+					<td>13</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>14</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>15</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr>
+					<td>16</td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+					<td contenteditable="true" inputmode="numeric"></td>
+				</tr>
+				<tr><td></td><td></td><td></td><td></td><td></td></tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td></td>
+					<td colspan=2></td>
+					<td colspan=2></td>
+				</tr>
+			</tfoot>
+		</table>
+		<dialog id="menu">
+			<form method="dialog">
+				<p>
+					Kopieer de link, of klik op delen.<br>
+					<input id="shareUrl" value="https://zeroknowledge.me/score/klaverjassen.html">
+					<button id="share">Delen</button>
+				</p>
+				<p>
+					<button id="new">Nieuw spel</button>
+				</p>
+			</form>
+		</dialog>
+	</body>
+</html>
