@@ -1,4 +1,4 @@
-table { width: 100%; height: 100%; border-collapse: collapse; table-layout: fixed;}
+table { width: 100%; height: 100%; border-collapse: collapse; table-layout: fixed; }
 thead th { height: 100%; }
 thead button { width: 100%; height: 100%; }
 th:first-child { width: 4ch; }

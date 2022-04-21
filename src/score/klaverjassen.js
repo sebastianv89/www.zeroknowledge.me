@@ -143,22 +143,25 @@ function getParameter(key, fallback) {
 	return params.get(key) || localStorage.getItem(`${baseStorageName()}[${key}]`) || fallback;
 }
 
-function saveStorage() {
-	const { wij, zij, scoreString } = getStorageObject();
-	localStorage.setItem(`${baseStorageName()}[wij]`, wij);
-	localStorage.setItem(`${baseStorageName()}[zij]`, zij);
-	localStorage.setItem(`${baseStorageName()}[scores]`, scoreString);
+function setShareUrl(wij, zij, scoreString) {
 	const baseUrl = `${window.location.protocol}//${window.location.host}${window.location.pathname}`;
 	const url = `${baseUrl}?wij=${encodeURIComponent(wij)}&zij=${encodeURIComponent(zij)}&scores=${encodeURIComponent(scoreString)}`;
 	document.getElementById('shareUrl').value = url;
 }
 
+function saveStorage() {
+	const { wij, zij, scoreString } = getStorageObject();
+	localStorage.setItem(`${baseStorageName()}[wij]`, wij);
+	localStorage.setItem(`${baseStorageName()}[zij]`, zij);
+	localStorage.setItem(`${baseStorageName()}[scores]`, scoreString);
+	setShareUrl(wij, zij, scoreString);
+}
+
 function share() {
 	const shareObj = {
 		title: 'Score klaverjassen',
-		url: document.getElementById('shareUrl').value,
-	}
-	console.log(shareObj);
+		url: document.getElementById('shareUrl').value
+	};
 	if (navigator.share) {
 		navigator.share(shareObj);
 	}
@@ -170,6 +173,7 @@ function initialize() {
 	const scoreString = getParameter('scores', '');
 	setNames(wij, zij);
 	setScores(decodeScores(scoreString));
+	setShareUrl(wij, zij, scoreString);
 }
 
 window.addEventListener('DOMContentLoaded', function() {
