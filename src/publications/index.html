@@ -4,6 +4,49 @@
 
 <h3 id="2022">2022</h3>
 <ul class="details-list">
+  <li id="quantum-sat">
+    <details>
+      <summary>
+        <h4>Factoring semi-primes with (quantum) SAT-solvers</h4>
+        <span class="subtitle">
+          <time>2022-02-04</time>,
+          <em>with <a href="https://faculty.iqc.uwaterloo.ca/mmosca/">Michele Mosca</a></em>
+          [<a href="https://doi.org/10.1038/s41598-022-11687-7">article</a>]
+        </span>
+      </summary>
+		  [<a href="https://arxiv.org/abs/1902.01448">preprint (2019-10-23)</a>]
+      [<a href="https://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1902-01448">bib (dblp)</a>]
+      [<a href="https://github.com/sebastianv89/factoring-sat">code repository</a>]
+      <h5>Abstract</h5>
+      <p>
+        The assumed computationally difficulty of factoring large integers
+        forms the basis of security for RSA public-key cryptography, which
+        specifically relies on products of two large primes or semi-primes. The
+        best-known factoring algorithms for classical computers run in
+        sub-exponential time. Since integer factorization is in NP, one can
+        reduce this problem to any NP-hard problem, such as Boolean
+        Satisfiability (SAT). While reducing factoring to SAT has proved to be
+        useful for studying SAT solvers, attempting to factor large integers
+        via such a reduction has not been found to be successful.
+      </p>
+      <p>
+        Shor's quantum factoring algorithm factors any integer in polynomial
+        time, although large-scale fault-tolerant quantum computers capable of
+        implementing Shor's algorithm are not yet available, so relevant
+        benchmarking experiments for factoring via Shor's algorithm are not yet
+        possible. In recent years, however, several authors have attempted
+        factorizations with the help of quantum processors via reductions to
+        NP-hard problems. While this approach may shed some light on some
+        algorithmic approaches for quantum solutions to NP-hard problems, in
+        this paper we study and question the practical effectiveness of this
+        approach for factoring large numbers. We find no evidence that this is
+        a viable path toward factoring large numbers, even for scalable
+        fault-tolerant quantum computers, as well as for various quantum
+        annealing or other special purpose quantum hardware. 
+      </p> 
+    </details>
+  </li>
+
   <li id="phd-thesis">
     <details>
       <summary>
@@ -93,11 +136,11 @@
         <span class="subtitle">
           <time>2019-10-21</time>,
           <em>
-            with <a href="http://www.iqc.ca/~mmosca/">Michele Mosca</a>
+            with <a href="https://faculty.iqc.uwaterloo.ca/mmosca/">Michele Mosca</a>
             and João Marcos Vensi Basso
           </em>
         </span>
-				[<a href="https://www.nature.com/articles/s41598-020-71654-y">article</a>]
+				[<a href="https://doi.org/10.1038/s41598-020-71654-y">article</a>]
       </summary>
 			[<a href="https://arxiv.org/abs/1910.09592">preprint</a>]
       [<a href="/pdf/publications/nfs-sat.pdf">.pdf</a>]
@@ -126,48 +169,6 @@
     </details>
   </li>
 
-  <li id="quantum-sat">
-    <details>
-      <summary>
-        <h4>Factoring semi-primes with (quantum) SAT-solvers</h4>
-        <span class="subtitle">
-          <time>2019-02-04</time>,
-          <em>with <a href="http://www.iqc.ca/~mmosca/">Michele Mosca</a></em>
-          [<a href="https://arxiv.org/abs/1902.01448">preprint</a>]
-        </span>
-      </summary>
-      [<a href="/pdf/publications/qsat.pdf">.pdf</a> (v2 2019-10-23)]
-      [<a href="https://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1902-01448">bib (dblp)</a>]
-      [<a href="https://github.com/sebastianv89/factoring-sat">code repository</a>]
-      <h5>Abstract</h5>
-      <p>
-        The assumed computationally difficulty of factoring large integers
-        forms the basis of security for RSA public-key cryptography, which
-        specifically relies on products of two large primes or semi-primes. The
-        best-known factoring algorithms for classical computers run in
-        sub-exponential time. Since integer factorization is in NP, one can
-        reduce this problem to any NP-hard problem, such as Boolean
-        Satisfiability (SAT). While reducing factoring to SAT has proved to be
-        useful for studying SAT solvers, attempting to factor large integers
-        via such a reduction has not been found to be successful.
-      </p>
-      <p>
-        Shor's quantum factoring algorithm factors any integer in polynomial
-        time, although large-scale fault-tolerant quantum computers capable of
-        implementing Shor's algorithm are not yet available, so relevant
-        benchmarking experiments for factoring via Shor's algorithm are not yet
-        possible. In recent years, however, several authors have attempted
-        factorizations with the help of quantum processors via reductions to
-        NP-hard problems. While this approach may shed some light on some
-        algorithmic approaches for quantum solutions to NP-hard problems, in
-        this paper we study and question the practical effectiveness of this
-        approach for factoring large numbers. We find no evidence that this is
-        a viable path toward factoring large numbers, even for scalable
-        fault-tolerant quantum computers, as well as for various quantum
-        annealing or other special purpose quantum hardware. 
-      </p> 
-    </details>
-  </li>
 </ul>
 
 <h3 id="2017">2017</h3>
@@ -225,7 +226,7 @@
         </span>
       </summary>
       [<a href="/pdf/publications/scimp.pdf">.pdf (mirror)</a>]
-      [<a href="http://dblp.uni-trier.de/rec/bibtex/journals/iacr/VerschoorL16">bib (dblp)</a>]
+      [<a href="https://dblp.uni-trier.de/rec/bibtex/journals/iacr/VerschoorL16">bib (dblp)</a>]
       <h5>Abstract</h5>
       <p>
         Silent Text, the instant messaging application by the company
@@ -336,7 +337,7 @@
         <h4>Analysis of the Euclidean Feature Transform algorithm</h4>
         <span class="subtitle">
           <time>2012-08-21</time>
-          [<a href="http://irs.ub.rug.nl/dbi/503b6b5f7fc75">Bachelor's thesis</a>]
+          [<a href="https://fse.studenttheses.ub.rug.nl/10480/">Bachelor's thesis</a>]
         </span>
       </summary>
       [<a href="/pdf/publications/INF-BA-2012_S-R-Verschoor.pdf">.pdf (mirror)</a>]
@@ -355,10 +356,10 @@
       <h5>Supervisors</h5>
       <ol>
         <li>
-          <a href="http://www.cs.rug.nl/~grl/">prof. dr. Gerard R. Renardel de Lavalette (primary supervisor)</a>
+          <a href="https://www.cs.rug.nl/~grl/">prof. dr. Gerard R. Renardel de Lavalette (primary supervisor)</a>
         </li>
         <li>
-          <a href="http://wimhesselink.nl/">prof. dr. Wim H. Hesselink (secondary supervisor)</a>
+          <a href="https://wimhesselink.nl/">prof. dr. Wim H. Hesselink (secondary supervisor)</a>
         </li>
       </ol>
     </details>
