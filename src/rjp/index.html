@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Raad je plaatje</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="loginScreen">
+      <img src="favicon.svg" alt="Raad je plaatje" width="120" style="filter:invert(1)">
+      Raad je plaatje
+      <button id="login">
+        <img src="spotify.svg" alt="Spotify" width="100">
+        <span>Log In</span>
+      </button>
+      <span id="premium">(Alleen met Spotify Premium)</span>
+    </div>
+    <div id="scanScreen">
+      <canvas id="playback"></canvas>
+      <button id="closeScan">X</button>
+    </div>
+    <div id="playScreen">
+      <button id="scan"><img src="qr-scan.svg" alt="Scan QR" height="50"></button>
+      <button id="play"><img src="play.svg" alt="Play" height="80"></button>
+      <button id="pause" class="animatedPlay" hidden><img src="pause.svg" alt="Pause" height="80"></button>
+      <button id="logout">Log Out</button>
+    </div>
+
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="jsQR.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
