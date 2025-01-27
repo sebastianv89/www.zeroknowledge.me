@@ -9,6 +9,7 @@
 		<script src="/score/score.js"></script>
 	</head>
 	<body>
+    <!--edit-->
 		<table id="scorepad">
 			<thead spellcheck="false">
 				<tr>
