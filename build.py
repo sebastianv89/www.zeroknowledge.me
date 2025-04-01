@@ -106,7 +106,7 @@ def clean_dir(pub_dir, src_dir, force, verbose):
                 os.remove(pout)
                 
 def build(args):
-    clean_dir(args.publish_dir, args.source_dir, args.force, args.verbose);
+    clean_dir(args.publish_dir, args.source_dir, args.force, args.verbose)
     build_dir(args.publish_dir, args.source_dir, None, args.force, args.verbose)
 
 def track_files(args):
@@ -117,6 +117,7 @@ def track_files(args):
 def server(args):
     _thread.start_new_thread(track_files, (args, ))
 
+    os.makedirs(args.publish_dir, exist_ok=True)
     os.chdir(args.publish_dir)
     handler = http.server.SimpleHTTPRequestHandler
     with socketserver.TCPServer(('', PORT), handler) as httpd:
