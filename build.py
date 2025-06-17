@@ -89,6 +89,10 @@ def build_dir(pub_dir, src_dir, tin, force, verbose):
             write_page(pout, pin, tmpl, force, verbose)
 
 def clean_dir(pub_dir, src_dir, force, verbose):
+    if not os.path.isdir(pub_dir):
+        if verbose >= 2:
+            print('pub_dir does not exist: skip cleaning')
+        return
     for f in filter(lambda f: not f.startswith('.'), os.listdir(pub_dir)):
         pin = os.path.join(src_dir, f)
         pout = os.path.join(pub_dir, f)
