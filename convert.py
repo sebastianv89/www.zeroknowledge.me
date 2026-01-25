@@ -6,6 +6,7 @@
 import os
 import markdown
 import frontmatter
+import time
 
 DIR = './src/recipes/'
 HEADER = './src/templates/head.html'
@@ -31,6 +32,8 @@ def main():
         if ext == '.raw':
             continue
         if ext == '.md':
+            last_mod = os.path.getmtime(full_name)
+            last_mod_str = time.strftime("%Y-%m-%d", time.gmtime(last_mod))
             with open(full_name, 'r', encoding='utf-8') as fin:
                 doc = frontmatter.load(fin)
             if doc.content == '':
@@ -48,7 +51,7 @@ def main():
                 elif not src == '':
                     fout.write(f'Bron: {src}\n')
                 fout.write(markdown.markdown(doc.content))
-                fout.write(footer)
+                fout.write(footer.replace('<!--LAST_MODIFIED-->', last_mod_str, 1))
             recipes.append(os.path.splitext(fname)[0])
         else:
             print('WARNING: unexpected file:', fname)
@@ -59,7 +62,7 @@ def main():
         findex.write(header)
         findex.write('<ul>')
         for recipe in recipes:
-            findex.write(f'<li><a href="/recipes/{recipe}.html">{recipe}</a></li>')
+            findex.write(f'<li><a href="/recipes/{recipe}.html">{recipe}</a></li>\n')
         findex.write('</ul>')
         findex.write(footer)
 
