@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://deliciousmagazine.nl/recepten/pompoensoep-met-miso-rozemarijnsalsa/">Bron</a>
+<h1>Pompoensoep met miso &amp; rozemarijnsalsa</h1>
+<h2>Ingrediënten</h2>
+<ul>
+<li>1 flinke flespompoen</li>
+<li>100 ml olijfolie</li>
+<li>3 grote uien geraspt</li>
+<li>3 takjes rozemarijn</li>
+<li>1 el witte miso</li>
+<li>6 el pompoenpitten geroosterd</li>
+<li>2 el honing</li>
+<li>4 el parmezaan geraspt</li>
+<li>200 ml hazelnootolie</li>
+<li>6 el mascarpone</li>
+</ul>
+<h2>Instructies</h2>
+<ol>
+<li>Verwarm de oven voor op 190°C.</li>
+<li>Snijd de pompoen in vieren, haal de zaadlijsten eruit en doe in een
+   ovenschaal, besprenkel met wat van de olijfolie en bestrooi met zout.
+   Rooster de pompoen in 30 min. gaar.</li>
+<li>Bak intussen de uien in de soeppan op laag vuur in de rest van de olijfolie
+   15 min. tot ze zacht en gekaramelliseerd zijn. Voeg de rozemarijn en miso
+   toe.</li>
+<li>Schep met een lepel het gare pompoenvlees uit de schil en voeg toe aan de
+   uien. Haal de rozemarijn eruit. Voeg 1 liter water toe en naar smaak zout en
+   peper. Breng de soep aan de kook, zet het vuur dan laag en kook nog een paar
+   minuten. Pureer de soep glad met de staafmixer. Voeg de mascarpone toe en
+   pureer nog kort.</li>
+<li>Rooster intussen de pompoenpitten al omschuddend in een droog verhitte
+   koekenpan en schud op een bord.</li>
+<li>Ris de rozemarijnnaaldjes van de takjes af en snijd ze heel fijn. Mix de
+   rozemarijn met tweederde van de geroosterde pompoenpitten, honing, parmezaan
+   en hazelnootolie en breng goed op smaak met zout. Serveer de soep en laat
+   iedereen zelf wat pompoenpit-rozemarijnsalsa erin scheppen en bestrooien met
+   wat pompoenpitjes. Ook lekker is het om 1-2 van de salsa door wat zachte
+   boter te roeren om met lekker brood bij de soep te serveren.</li>
+</ol>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

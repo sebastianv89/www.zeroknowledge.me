@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://picnic.app/nl/recepten/6442576c6f976a14793eca1e/tomatenorzo-met-geroosterde-bimi-en-burrata">Bron</a>
+<h1>Tomatenorzo met geroosterde bimi en burrata</h1>
+<p>Bimi zit qua smaak een beetje tussen groene asperge en broccoli in. Dubbel zo
+lekker dus!</p>
+<h2>Ingrediënten</h2>
+<ul>
+<li>400 g tomatenblokjes</li>
+<li>200 g bimi</li>
+<li>2 stuks burrata</li>
+<li>400 g cherrytomaatjes</li>
+<li>1 stuk rode ui</li>
+<li>275 g orzo</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Verwarm de oven voor op 200 graden. Verdeel 200 g bimi over een met
+   bakpapier beklede plaat en besprenkel met wat 1 el olijfolie. Rooster de
+   bimi 15 minuten in de oven totdat hij gaar is.</li>
+<li>Pel 1 rode ui en 2 teentjes knoflook, en snij fijn. Halveer 400 g
+   cherrytomaatjes. Verhit 2 el olijfolie in een ruime koekenpan en fruit de
+   rode ui en knoflook hierin aan.</li>
+<li>Voeg de cherrytomaatjes en 400 g tomatenblokjes toe, en bak deze 2 minuten
+   mee. Voeg dan ook 275 g orzo en 600 ml water toe en roer goed door. Laat de
+   orzo gedurende 12 tot 15 minuten zachtjes sudderen. Voeg eventueel een
+   scheutje extra water voor meer smeuïgheid.</li>
+<li>Breng de orzo op smaak met peper en zout, en verdeel samen met de bimi over
+   de borden. Laat 2 burrata's uitlekken en snij ze doormidden. Serveer de
+   tomatenorzo met de gehalveerde burrata's.</li>
+</ol>
+<h2>Tip</h2>
+<p>Extra lekker met pijnboompitten en chilivlokken. Rooster de pijnboompitten
+eerst goudbruin in een droge koekenpan.</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

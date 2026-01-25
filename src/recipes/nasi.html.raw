@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+Bron: Silke?
+<h1>Nasi</h1>
+<h2>Ingredienten</h2>
+<ul>
+<li>200 gram basmati rijst</li>
+<li>2 preien</li>
+<li>2 tenen knoflook</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>
+<p>Bereid de kruidenmix voor (zie ander recept)</p>
+</li>
+<li>
+<p>Kook de rijst (10 minuten + 10 minuten laten staan)</p>
+</li>
+<li>Snijd en was de prei</li>
+<li>Bak de prei en knoflook</li>
+<li>Voeg de kruidenmix en de rijst toe</li>
+<li>Voeg eventueel ook sambal toe</li>
+</ol>
+<h2>Variatietip</h2>
+<p>Lekker met:
+- seroendeng
+- gebakken uitjes
+- pindasaus
+- sambal
+of gewoon met al het andere van de Indische rijsttafel</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

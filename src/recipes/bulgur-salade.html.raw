@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://picnic.app/nl/recepten/65f0423d06c8814b5a5815d5/bulgursalade-met-halloumi">Bron</a>
+<h1>Bulgursalade met halloumi</h1>
+<h2>Ingredienten</h2>
+<ul>
+<li>200 g halloumi</li>
+<li>2 stuks avocado's</li>
+<li>275 g bulgur</li>
+<li>0.5 bosjes verse munt</li>
+<li>1 stuk courgette</li>
+<li>2 el tahin</li>
+<li>0.5 stuks citroen</li>
+<li>50 g ongezouten amandelen</li>
+<li>250 g cherrytomaatjes</li>
+<li>1 el honing</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Bereid 275 g bulgur volgens de instructies op de verpakking. Voeg wat zout
+    toe aan het kookwater en laat de bulgur na het koken goed uitlekken.</li>
+<li>Haal 200 g halloumi uit de verpakking en dep droog. Snij de halloumi in
+    plakken en smeer de plakken in met olijfolie.</li>
+<li>Snij 1 courgette over de lengte in lange dunne plakken, halveer de plakken
+    zodat ze minder lang worden. Je kunt hiervoor bijvoorbeeld een kaasschaaf
+    of mandoline gebruiken. Smeer ook deze plakken in met olijfolie.</li>
+<li>Verwarm een grillpan of contactgrill zonder olie. Gril de plakken courgette
+    op hoog vuur aan beide kanten totdat er grillstrepen zichtbaar zijn. Haal
+    uit de pan en leg opzij. Doe hetzelfde met de plakken halloumi.</li>
+<li>Maak ondertussen een dressing van 4 el olijfolie, 2 el tahina, 1 el honing
+    en het sap van een halve citroen. Meng goed en breng op smaak met peper en
+    zout.</li>
+<li>Hak de blaadjes van een half bosje munt grof. Halveer 250 g
+    cherrytomaatjes. Halveer 2 avocado's, verwijder de pit en snij het
+    vruchtvlees in plakken.</li>
+<li>Meng de bulgur met de avocado, tomaatjes, halloumi, courgette, de helft van
+    de munt en de helft van de dressing.</li>
+<li>Garneer de bulgur met 50 g gehakte amandelen. Garneer met de overige munt
+    en dressing.</li>
+</ol>
+<h2>Variatietip</h2>
+<p>Extra lekker met granaatappelpitjes en ringetjes bosui.</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<ul><li><a href="/recipes/pompoensoep.html">pompoensoep</a></li><li><a href="/recipes/huevos-rancheros.html">huevos-rancheros</a></li><li><a href="/recipes/shakshuka-pompoen.html">shakshuka-pompoen</a></li><li><a href="/recipes/kip-wraps.html">kip-wraps</a></li><li><a href="/recipes/courgette-feta-koekjes.html">courgette-feta-koekjes</a></li><li><a href="/recipes/gevulde-zoete-aardappel.html">gevulde-zoete-aardappel</a></li><li><a href="/recipes/guacamole.html">guacamole</a></li><li><a href="/recipes/paddenstoelen-shoarma.html">paddenstoelen-shoarma</a></li><li><a href="/recipes/gnocchi-asperges.html">gnocchi-asperges</a></li><li><a href="/recipes/nasi.html">nasi</a></li><li><a href="/recipes/orzo-portobello.html">orzo-portobello</a></li><li><a href="/recipes/nasi-mix.html">nasi-mix</a></li><li><a href="/recipes/pasta-pesto.html">pasta-pesto</a></li><li><a href="/recipes/spinazie-feta-rolletjes.html">spinazie-feta-rolletjes</a></li><li><a href="/recipes/trifle-brownie.html">trifle-brownie</a></li><li><a href="/recipes/chili.html">chili</a></li><li><a href="/recipes/tiktok-pasta.html">tiktok-pasta</a></li><li><a href="/recipes/traybake-kip-pesto.html">traybake-kip-pesto</a></li><li><a href="/recipes/ramen.html">ramen</a></li><li><a href="/recipes/couscous.html">couscous</a></li><li><a href="/recipes/halloumi-stamppot.html">halloumi-stamppot</a></li><li><a href="/recipes/bulgur-salade.html">bulgur-salade</a></li><li><a href="/recipes/buddha-bowl.html">buddha-bowl</a></li><li><a href="/recipes/lasagna.html">lasagna</a></li><li><a href="/recipes/orzo-bimi-burrata.html">orzo-bimi-burrata</a></li><li><a href="/recipes/joyce-noodles.html">joyce-noodles</a></li><li><a href="/recipes/falafel-bowl.html">falafel-bowl</a></li><li><a href="/recipes/linzenburgers.html">linzenburgers</a></li><li><a href="/recipes/spaghetti-gorgonzola.html">spaghetti-gorgonzola</a></li></ul>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

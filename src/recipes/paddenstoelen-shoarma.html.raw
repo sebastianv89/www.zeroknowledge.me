@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://picnic.app/nl/recepten/64ef5df07bdf956a715c88ac/paddenstoelen-shoarma">Bron</a>
+<h1>Paddenstoelen-shoarma</h1>
+<h2>Ingrediënten</h2>
+<ul>
+<li>8 stuks volkoren pita's</li>
+<li>450 g oesterzwammen</li>
+<li>2 el shoarmakruiden</li>
+<li>1 stuk komkommer</li>
+<li>2 stuks trostomaten</li>
+<li>200 g gesneden rode kool</li>
+<li>250 g yoghurt Griekse stijl</li>
+<li>2 tl sriracha</li>
+<li>2 teentjes knoflook</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Verwarm de oven voor op 200 graden. Bak 8 volkoren pita’s volgens de
+   aanwijzingen op de verpakking.</li>
+<li>Meng 2 el shoarmakruiden met 2 el olijfolie en een snuf peper en zout in een
+   ruime kom. Trek 450 g oesterzwammen in reepjes uit elkaar en meng door de
+   kruidenolie. Laat 5 minuten staan.</li>
+<li>Snij ondertussen 2 tomaten en 1 komkommer in kleine blokjes, en meng met 200
+   g fijngesneden rode kool in een kom.</li>
+<li>Meng in een schaaltje 250 g yoghurt met 1 à 2 tl sriracha en 2 el water tot
+   een pittige yoghurtsaus.</li>
+<li>Pers 2 teentjes knoflook uit. Verhit 1 el olijfolie in een koekenpan en bak
+   de knoflook en de gemarineerde oesterzwammen 5 à 6 minuten rondom op hoog
+   vuur.</li>
+<li>Snij de pita’s open en vul ze met de rauwkost en de paddenstoelen-shoarma.
+   Serveer ze met de pittige yoghurtsaus.</li>
+</ol>
+<h2>Tip</h2>
+<p>Extra lekker met wat verse dille. Hak deze grof en verdeel over de pita's bij
+serveren.</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://picnic.app/nl/recepten/658c11099ecda32dd885c0e6/snelle-ramenbowl">Bron</a>
+<h1>Snelle ramenbowl</h1>
+<p>Instant noedels, maar dan zelfgemaakt! Met gember, shiitake en een perfect
+gekookt eitje.</p>
+<h2>Ingrediënten</h2>
+<ul>
+<li>4 stuks eieren</li>
+<li>1 pak woknoedels</li>
+<li>4 el kokosmelk</li>
+<li>2 el rode currypasta</li>
+<li>2 cm gember</li>
+<li>2 el zwart sesamzaad</li>
+<li>100 g shiitake</li>
+<li>2 stengels bosuien</li>
+<li>1 stuk winterpeen</li>
+<li>2 l groentebouillon</li>
+<li>2 el sojasaus minder zout</li>
+<li>2 teentjes knoflook</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Schil en rasp 2 cm gember en pers 2 teentjes knoflook uit. Verhit 2 el olie
+   in een ruime kookpan of stoofpan en fruit de gember en de knoflook hierin
+   aan.</li>
+<li>Maak ondertussen 2 liter groentebouillon volgens de aanwijzingen op de
+   verpakking.</li>
+<li>Snij 100 g shiitake doormidden en fruit kort mee in de pan. Voeg nu 2 el
+   rode-currypasta, 2 el sojasaus, 4 el kokosmelk en alle bouillon toe aan de
+   pan en roer goed door elkaar. Breng aan de kook en voeg dan 1 pak woknoedels
+   toe aan de pan. Laat zachtjes 5 à 6 minuten koken totdat de noedels gaar
+   zijn.</li>
+<li>Breng ondertussen water aan de kook in een steelpannetje en kook 4 eieren 6
+   à 7 minuten tot een middelzacht gekookt ei.</li>
+<li>Schil 1 winterpeen en rasp met een grove rasp boven een kom. Voeg de
+   wortelrasp toe aan de pan met de noedelsoep en laat een aantal minuten
+   meekoken.</li>
+<li>Proef de soep en breng eventueel op smaak met meer sojasaus of currypasta.
+   Verdeel de soep over de kommen en leg in elke kom twee halve gekookte
+   eitjes. Snij 2 bosuitjes in ringetjes en garneer de noedelsoep met de bosui
+   en wat zwarte sesamzaadjes.</li>
+</ol>
+<h2>Tip</h2>
+<p>Extra lekker met wat crispy chili-olie. Voeg voor extra groenten een handje
+babyspinazie toe aan de soep.</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://picnic.app/nl/recepten/692833d62d5d827f881254f2/pompoenshakshuka-met-feta-en-knoflooktoast">Bron</a>
+<h1>Pompoenshakshuka met feta en knoflooktoast</h1>
+<p>Een verwarmend, groenterijk pannetje om lekker je toast in te dippen.</p>
+<h2>Ingrediënten</h2>
+<ul>
+<li>175 g gesnipperde ui</li>
+<li>6 el milde harissa</li>
+<li>800 g tomatenblokjes</li>
+<li>300 g desembrood wit</li>
+<li>4 stuks eieren</li>
+<li>150 g feta</li>
+<li>naar smaak platte peterselie</li>
+<li>800 g pompoenblokjes</li>
+<li>30 g kruidenboter met knoflook</li>
+<li>1 stuk biologische citroen</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Verwarm de oven voor op 200 °C. Breng een pan met ruim, gezouten water aan
+   de kook. Voeg 800 g pompoenblokjes toe en kook in ca. 8 minuten gaar.</li>
+<li>Verhit ondertussen 3 el olijfolie in een ruime stoofpan op middelhoog vuur.
+   Voeg 175 g gesneden uien toe en bak in circa 3 minuten glazig. Voeg 6 el
+   milde harissa toe en 800 g tomatenblokjes toe en breng aan de kook. Kook in
+   ca. 5 minuten onder af en toe roeren tot een iets dikkere saus.</li>
+<li>Snijd ondertussen van 1 desembrood wit 8 plakken van 1 cm. Smeer ze aan 1
+   kant in met totaal 2 el knoflookboter. Verdeel over een met bakpapier
+   beklede bakplaat en rooster in ca. 12 minuten goudbruin en knapperig.</li>
+<li>Giet de pompoen af en voeg toe aan de tomatensaus. Breng de saus flink op
+   smaak met peper en zout. Maak een kuiltje in de stoof. Splits 1 ei en laat
+   in het kuiltje vallen. Herhaal met 3 eieren. Doe de deksel op de pan en
+   stoof in circa 8 minuten de eitjes half gaar.</li>
+<li>Verbrokkel ondertussen 150 g feta boven een kom. Rasp de schil van 1
+   biologische citroen en voeg 1 el olijfolie toe. Breng op smaak met peper.
+   Serveer de pompoenshakshuka in de pan. Bestrooi met wat blaadjes peterselie
+   naar smaak en met de gemarineerde feta. Serveer met de toast ernaast.</li>
+</ol>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

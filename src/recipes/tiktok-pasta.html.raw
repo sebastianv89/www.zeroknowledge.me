@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://15gram.be/recepten/spaghetti-met-gebakken-feta-spinazie-en-kerstomaten">Bron</a>
+<h1>Spaghetti met gebakken feta, spinazie en kerstomaten</h1>
+<h2>Ingrediënten</h2>
+<ul>
+<li>2 teentjes knoflook</li>
+<li>1 kl chilivlokken</li>
+<li>250 g kerstomaten</li>
+<li>200 g feta</li>
+<li>200 g spaghetti</li>
+<li>150 g spinazie</li>
+<li>2 el olijfolie</li>
+<li>peper</li>
+<li>zout</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Verwarm de oven voor op 200 °C.</li>
+<li>Pers de knoflook. Meng de olijfolie met de knoflook en de chilivlokken
+   (gebruik minder als je niet van pittig houdt), peper en zout. Doe de
+   kerstomaten in een ovenschaal en schenk er 3/4de van de olijfolie over. Meng
+   goed. Schuif de kerstomaten wat naar opzij en leg de feta in het midden.
+   Besprenkel met de rest van de olie. Zet de ovenschaal 15 minuten in de
+   voorverwarmde oven.</li>
+<li>Breng een pot gezouten water aan de kook en kook de spaghetti beetgaar in 7
+   minuten. Giet de pasta af, maar hou een kop van het kookvocht bij.</li>
+<li>Zet de ovenschaal nog 5 minuten onder de grill van de oven. Hak ondertussen
+   de spinazie grof.</li>
+<li>Voeg de grofgehakte spinazie toe aan de ovenschaal. Roer de zacht geworden
+   feta, kerstomaten en spinazie goed door mekaar. Meng met de gekookte
+   spaghetti. Voeg eventueel nog wat van het kookvocht van de pasta toe. Meng
+   goed en breng op smaak met peper en zout. Serveer de pasta.</li>
+</ol>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

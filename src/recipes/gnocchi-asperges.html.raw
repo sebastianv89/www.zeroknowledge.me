@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://www.ah.nl/allerhande/recept/R-R830900/gnocchi-met-groene-asperges">Bron</a>
+<h2>Gnocchi met groene asperges</h2>
+<h2>Ingrediënten</h2>
+<ul>
+<li>500 g verse groene asperges</li>
+<li>2 rode uien</li>
+<li>50 g ongezouten roomboter</li>
+<li>500 g gnocchi</li>
+<li>75 g rucola</li>
+<li>145 g Bettine Blanc geitenkaas 50+</li>
+<li>2 eieren</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>
+<p>Pocheer de eieren</p>
+</li>
+<li>
+<p>Verwijder de houtige onderkant van de asperges. Snijd de asperges in schuine stukken van 2 cm.</p>
+</li>
+<li>Snijd de ui in ringen.</li>
+<li>Verhit de helft van de boter in een hapjespan en fruit de ui 5 min.</li>
+<li>
+<p>Voeg de asperges toe en bak 3 min.</p>
+</li>
+<li>
+<p>Kook de gnocchi volgens de aanwijzingen op de verpakking beetgaar.</p>
+</li>
+<li>Voeg ondertussen de rest van de boter en de rucola toe aan het aspergemengsel.</li>
+<li>Breng op smaak met peper en zout. Verdeel over de diepe borden en verkruimel de kaas erover.</li>
+</ol>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

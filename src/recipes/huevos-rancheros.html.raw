@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://picnic.app/nl/recepten/64dcb108ad7bbf55ce99e3a2/huevos-rancheros">Bron</a>
+<h1>Huevos rancheros</h1>
+<p>Ogen dicht en waan je in Mexico met deze eieren in kruidige tomatensaus.</p>
+<h2>Ingrediënten</h2>
+<ul>
+<li>8 stuks eieren</li>
+<li>2 blikjes tomatenblokjes</li>
+<li>3 stuks trostomaten</li>
+<li>1 stuk rode paprika</li>
+<li>125 g zure room</li>
+<li>1 blikje kidneybonen</li>
+<li>1 stuk rode ui</li>
+<li>1 zakje tacokruiden</li>
+<li>8 stuks wraps</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Verwarm de oven voor op 180 graden. Gebruik voor dit gerecht een hapjespan
+   met deksel. Snij 2 rode uien in ringen en bak deze in 1 el olijfolie in 5
+   minuten zacht.</li>
+<li>Snij 3 tomaten en 1 rode paprika in blokjes. Voeg deze met 1 zakje
+   tacokruiden toe aan de uien en bak nog 5 minuten mee.</li>
+<li>Laat 1 blik kidneybonen uitlekken. Roer 2 blikken tomatenblokjes en de
+   kidneybonen door de groenten en breng de saus aan het pruttelen. Breng op
+   smaak met peper en zout.</li>
+<li>Breek 8 eieren in individuele glaasjes, maak met een grote lepel kuiltjes in
+   de saus en laat in ieder kuiltje een eitje glijden.</li>
+<li>Laat de eieren in 10 minuten gaar worden met de deksel op de pan.</li>
+<li>Snij ondertussen 8 wraps in puntjes en verdeel over een met bakpapier
+   beklede bakplaat. Besprenkel de wraps met wat olijfolie en rooster 5 minuten
+   in de oven totdat ze krokant zijn. Serveer de Huevos rancheros met de wraps
+   en zure room.</li>
+</ol>
+<h2>Tip</h2>
+<p>Garneer naar smaak met jalapeño's en koriander.</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

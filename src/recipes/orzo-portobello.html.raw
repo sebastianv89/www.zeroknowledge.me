@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://picnic.app/nl/recepten/66e075de6e80db37f33c0c53/orzo-uit-de-oven-met-portobello">Bron</a>
+<h1>Orzo uit de oven met portobello</h1>
+<p>Een smeuïg gerecht met een stevige bite. Hier blijf je van opscheppen!</p>
+<h2>Ingrediënten</h2>
+<ul>
+<li>275 g orzo</li>
+<li>75 g crème fraîche</li>
+<li>550 ml champignonbouillon</li>
+<li>400 g champignon-roerbakgroenten</li>
+<li>4 stuks portobello</li>
+<li>250 g gerookte spekreepjes</li>
+<li>60 g geraspte geitenkaas</li>
+<li>3 stuks sjalot</li>
+<li>2 tl gedroogde tijm</li>
+<li>2 teentjes knoflook</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Verwarm de oven en een ovenschaal (van circa 25 x 25 cm) voor op 200 graden.</li>
+<li>Verhit 2 el olijfolie in een koekenpan en bak hierin 400 g
+   champignon-preimix met 1 tl gedroogde tijm in 4 minuten op middelhoog vuur.
+   Breng op smaak met peper en zout. Bereid 550 ml champignon-bouillon volgens
+   de instructies op de verpakking. Meng 275 orzo door de groenten bak 1 minuut
+   mee. Schep de inhoud van de pan voorzichtig in de voorverwarmde ovenschaal.
+   Schenk de bouillon erbij, roer door en verdeel gelijkmatig over de
+   ovenschaal. Zet de ovenschaal op een bakplaat en bak de orzo in 30 minuten
+   gaar in het midden van de voorverwarmde oven.</li>
+<li>Snij ondertussen 2 teentjes knoflook fijn en snij 3 sjalotjes in dunne halve
+   ringen. Veeg de koekenpan schoon. Verwarm opnieuw 2 el olijfolie in de pan
+   en bak hierin de knoflook, sjalot en 1 tl tijm 3 minuten op middelhoog vuur</li>
+<li>Maak ondertussen 4 portobello's schoon en verwijder de steeltjes.</li>
+<li>Voeg 250 g spekreepjes toe aan de koekenpan en bak totdat de spekreepjes
+   bijna gaar zijn. Haal van het vuur en voeg 50 g crème fraîche toe aan de
+   pan. Roer door en breng op smaak met peper en zout.</li>
+<li>Schep het mengsel in de uitgeholde portobello's en verdeel 60 g geraspte
+   geitenkaas over de portobello's. Leg de portobello's op een rooster zonder
+   bakpapier en schuif boven de orzo in de oven zodat het vocht uit de
+   portobello's op de orzo kan lekken. Bak in 10-13 minuten gaar.</li>
+<li>Roer als de orzo gaar is 25 g crème fraîche door de ovenschaal. Serveer de
+   orzo met de gevulde portobello's.</li>
+</ol>
+<h2>Tip</h2>
+<p>Extra lekker met wat geroosterde pijnboompitten. Strooi wat pijnboompitten over
+de portobello's voordat deze de oven in gaan. Geen fan van geitenkaas? Kies dan
+voor je eigen favoriete kaas. Liever zonder vlees? Dit recept is ook heerlijk
+met vegetarische spekjes.</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

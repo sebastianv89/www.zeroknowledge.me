@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://www.lekkerensimpel.com/buddha-bowl/">Bron</a>
+<h1>Buddha bowl</h1>
+<h2>Benodigdheden:</h2>
+<ul>
+<li>2 zoete aardappels</li>
+<li>2 el olijfolie + 1 el olijfolie</li>
+<li>1 tl paprikapoeder</li>
+<li>200 gr kikkererwten (Bonduelle)</li>
+<li>halve tl komijn</li>
+<li>snufje chili</li>
+<li>1 avocado</li>
+<li>2 tomaten</li>
+<li>100 gr (parel)couscous</li>
+<li>1 bouillonblokje (groenten) (Maggi)</li>
+<li>snufje zout en peper</li>
+</ul>
+<h3>Voor de dressing:</h3>
+<ul>
+<li>1 el water</li>
+<li>1 tl honing</li>
+<li>3 el mayonaise</li>
+<li>snufje zout en peper</li>
+</ul>
+<h2>Bereidingswijze</h2>
+<ol>
+<li>Verwarm de oven voor op 200 graden.</li>
+<li>Schil de zoete aardappels en snijd de aardappels in stukjes.</li>
+<li>Meng de zoete aardappel met 2 el olijfolie, paprikapoeder en een snuf zout
+   en peper. Verdeel dit over een bakplaat met bakpapier en bak de stukjes
+   zoete aardappel ongeveer 20-25 minuten in de oven.</li>
+<li>Bereid de couscous volgens de instructies van de verpakking en voeg een
+   (half) bouillonblokje toe aan het water.</li>
+<li>Ondertussen verwarm je 1 el olijfolie in een pan.</li>
+<li>Giet de kikkererwten af, spoel ze schoon en doe ze in de pan samen met de
+   komijn, chili en een snufje zwarte peper. Bak de kikkererwten totdat ze
+   bruin zijn.</li>
+<li>Ondertussen snijd de avocado in plakjes en de tomaat in partjes.</li>
+<li>Meng de ingrediënten voor de dressing door elkaar.</li>
+<li>Verdeel de zoete aardappel, couscous, kikkererwten, avocado, tomaat en
+   dressing over twee kommen.</li>
+</ol>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://leukegeit.nl/vegaburger-linzen-en-champignons/">Bron</a>
+<h1>Vegaburger met linzen en champignons</h1>
+<h2>Ingrediënten:</h2>
+<ul>
+<li>1 teentje knoflook, fijngesneden</li>
+<li>250 gram kastanjechampignons, door de helft gesneden</li>
+<li>3 verse takjes tijm</li>
+<li>3 uien, fijngesneden</li>
+<li>1 blik voorgekookte linzen van 310 gram, alvast laten uitlekken</li>
+<li>olijfolie</li>
+<li>circa 5 eetlepels paneermeel</li>
+<li>geklutst ei</li>
+<li>theelepel zout</li>
+<li>een schepje bloem</li>
+<li>1 tomaat</li>
+<li>sla</li>
+<li>geitenkaas</li>
+<li>4 speltbollen (of andere hamburgerbroodjes)</li>
+<li>harissa</li>
+</ul>
+<h2>Bereiding van de burgers:</h2>
+<ol>
+<li>Mix met een staafmixer de knoflook, tijm en champignons tot ze fijngemalen
+   zijn. Probeer het niet compleet fijn te malen, want het is juist lekker als
+   je de champignon-structuur nog proeft.</li>
+<li>Verwarm wat olijfolie in een pan en bak de uien op laag vuur in zo’n 15
+   minuten goudbruin. Voeg hierna het mengsel van champignon toe en laat het
+   nog 3 minuten meebakken tot het vocht is verdwenen. Laat het mengsel hierna
+   even afkoelen.</li>
+<li>Voeg het inmiddels afgekoelde mengsel met de linzen, paneermeel, ei en zout
+   en hussel het goed door elkaar. Maak hier 4 flinke burgers van.</li>
+<li>Verwarm de koekenpan opnieuw met wat olijfolie en bedek de burgers met een
+   laagje bloem voor een mooi bakresultaat.</li>
+<li>Bak de burgers ongeveer 5 minuten per kant en bedek ze met geitenkaas zodra
+   je deze hebt omgedraaid.</li>
+<li>Presenteer de burger op een broodje met sla, eventueel wat ketchup en een
+   plakje tomaat. Wedden dat je ook zo van de burger zult genieten als ik heb
+   gedaan. Eet smakelijk!</li>
+</ol>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

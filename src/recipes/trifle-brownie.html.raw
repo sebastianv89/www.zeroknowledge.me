@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://familieoverdekook.nl/trifle-met-brownie-en-salted-caramel-maken/">Bron</a>
+<h2>Ingrediënten</h2>
+<ul>
+<li>250 gram mascarpone</li>
+<li>125 milliliter slagroom</li>
+<li>2 eetlepels suiker</li>
+<li>handje gesuikerde amandelen grof gehakt</li>
+<li>brownie of chocoladecake</li>
+<li>salted caramel of kant en klare karamelsaus</li>
+</ul>
+<h3>simpele brownie</h3>
+<ul>
+<li>150 gram roomboter</li>
+<li>75 gram cacaopoeder</li>
+<li>250 gram suiker</li>
+<li>75 gram bloem</li>
+<li>3 eieren</li>
+<li>snufje zout</li>
+</ul>
+<h3>salted caramel</h3>
+<ul>
+<li>200 gram suiker</li>
+<li>125 milliliter slagroom</li>
+<li>75 millliter water</li>
+<li>75 gram roomboter</li>
+<li>flinke snuf zeezout</li>
+</ul>
+<h2>Bereiding</h2>
+<h3>Brownie</h3>
+<p>Verwarm de oven voor op 180 graden. Vet en bekleed een brownie vorm in. Smelt
+op laag vuur in een steelpannetje de boter met suiker, cacaopoeder en een
+snufje zout. Haal de pan van het vuur en spatel voorzichtig beetje bij beetje
+75 gram bloem toe. Spatel daarna 1 voor 1 de eieren erdoorheen. Giet het
+mengsel in de brownie vorm en bak in 30-35 minuten gaar en krokant. Laat de
+brownie helemaal afkoelen alvorens je hem gaat aansnijden.</p>
+<h3>Salted Caramel</h3>
+<p>Doe de suiker met het water in een kookpan met een hoge rand (geen koekenpan)
+en zet de pan op middelhoog vuur. Breng het suikermengsel langzaam aan de kook,
+tot de suiker een mooie goudkleur begint te krijgen. Blijf tot die tijd van de
+pan af! Als de suiker een mooie goudkleur heeft, dan ga je met een garde
+roeren. Voeg de slagroom toe. Schrik niet dit gaat flink borrelen en het komt
+omhoog…blijf echter roeren Roer nog even 1-2 minuten door tot de karamelsaus
+dikker begint te worden. Haal de pan van het vuur en laat de saus 2-3 minuten
+iets afkoelen. Voeg dan de blokjes roomboter toe met een flinke snuf zeezout en
+roer dit door de karamelsaus. Schenk je karamelsaus in een klein potje en zet
+je pan meteen onder met heet water en een druppeltje afwasmiddel. (hierdoor
+krijg je hem gewoon fatsoenlijk schoon)</p>
+<h3>Trifle</h3>
+<p>Klop de slagroom met 2 eetlepels suiker lobbig. (niet helemaal stijf) Spatel de
+mascarpone los en spatel dan voorzichtig de slagroom erdoorheen. Snijd 1/3 van
+de brownie in kleine blokjes. Pak 4 glaasjes en maak laagjes brownie,
+mascarpone mengsel en salted caramel. Zorg dat je afsluit met mascarpone en
+salted caramel. Bestrooi met gehakte gesuikerder amandelen en klaar is kees.
+TIP: voor wat kleur is het ook leuk om een blaadje munt toe te voegen.</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

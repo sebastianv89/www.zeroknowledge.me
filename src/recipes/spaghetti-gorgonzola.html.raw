@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://picnic.app/nl/recepten/64e8c5d464e4494cdd5e429c/spaghetti-met-gorgonzola-en-spinazie">Bron</a>
+<h1>Spaghetti met gorgonzola en spinazie</h1>
+<p>Gorgonzola is een pikant Italiaans blauwaderkaasje. Je maakt er zó pastasaus van!</p>
+<h2>Ingrediënten</h2>
+<ul>
+<li>150 g gorgonzola</li>
+<li>300 g spaghetti</li>
+<li>600 g spinazie</li>
+<li>150 ml slagroom</li>
+<li>75 g ongezouten, ongebrande walnoten</li>
+<li>1 stuk ui</li>
+<li>2 teentjes knoflook</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Breng een pan gezouten water aan de kook en kook hierin 300 g spaghetti
+   volgens de aanwijzingen op de verpakking. Giet af en hou warm.</li>
+<li>Pel 1 ui en 2 teentjes knoflook en snij fijn. Hak 75 g walnoten grof en snij
+   150 g gorgonzola in kleine stukjes.</li>
+<li>Verhit 2 el olijfolie in een ruime hapjespan en fruit de ui en knoflook
+   hierin 2 minuten aan. Voeg in delen dan ook 600 g spinazie toe. Breng op
+   smaak met zout en peper.</li>
+<li>Voeg, wanneer alle spinazie geslonken is, 150 ml slagroom en de helft van de
+   gorgonzola toe aan de spinazie. Roer door en zorg dat de gorgonzola goed
+   door de saus smelt.</li>
+<li>Voeg de spaghetti en de helft van de walnoten toe aan de pan, meng goed met
+   de spinazie. Voeg de overige gorgonzola toe en verwarm nog 1 minuut mee.</li>
+<li>Serveer de spaghetti met de rest van de walnoten.</li>
+</ol>
+<h2>Tip</h2>
+<p>Voeg voor meer groenten gehalveerde kastanjechampignons toe bij stap 3.
+Besprenkel naar smaak met een kneepje citroen.</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>

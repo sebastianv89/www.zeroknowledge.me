@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://www.leukerecepten.nl/recepten/spinazie-feta-bladerdeegrolletjes/">Bron</a>
+<h1>Spinazie feta bladerdeegrolletjes</h1>
+<h2>Ingrediënten</h2>
+<ul>
+<li>1 rol vers bladerdeeg</li>
+<li>200 gr feta</li>
+<li>400 gr verse spinazie ( of diepvries )</li>
+<li>Snuf peper</li>
+<li>1 ei</li>
+<li>2 eetlepels pijnboompitten</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Verwarm de oven voor op 200° graden.</li>
+<li>Bak de spinazie in een grote pan tot deze geslonken is. Je kunt ook
+   eventueel spinazie uit de diepvries ontdooien.</li>
+<li>Laat de spinazie goed uitlekken en druk met de bolle kant van een lepel zo
+   veel mogelijk vocht er uit.</li>
+<li>Breng de spinazie op smaak met een flinke snuf peper.</li>
+<li>Rol het bladerdeeg uit.</li>
+<li>Verdeel de spinazie over het bladerdeeg en kruimel hier de feta in kleine
+   stukjes over.</li>
+<li>Bestrooi met wat pijnboompitten.</li>
+<li>Rol het bladerdeeg voorzichtig op.</li>
+<li>Snijd met een scherp mes de rol in plakjes. Is dit lastig? Dan kun je de rol
+   een half uurtje in de koelkast leggen zodat hij wat opstijft.</li>
+<li>Leg de plakjes op een bakplaat met bakpapier en bestrijk met een los
+    geklopt ei.</li>
+<li>Bak de rolletjes 15 tot 20 minuten in de oven totdat ze goudbruin zijn.</li>
+</ol>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>
