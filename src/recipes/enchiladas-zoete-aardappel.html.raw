@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+<a href="https://foxilicious.nl/comfortfood-wraps-gepofte-zoete-aardappel/">Bron</a>
+<h1>Falafelbowl met hummus en feta</h1>
+<h2>Ingrediënten</h2>
+<ul>
+<li>2-3 zoete aardappel (ongeveer 500 gram)</li>
+<li>olijfolie</li>
+<li>1 klein rode ui</li>
+<li>1 teentje knoflook</li>
+<li>1 blik zwarte boon (400 gram, 250 gram uitlekgewicht)</li>
+<li>1 blikje mais (150 gram) (Bonduelle)</li>
+<li>100 gram feta</li>
+<li>1 flinke eetlepel Mexicaanse kruidenmix</li>
+<li>3 eetlepels tacosaus medium of hot</li>
+<li>50 gram geraspte kaas of feta</li>
+<li>100 ml creme fraiche</li>
+<li>8 (volkoren) wraps, medium size (Santa Maria)</li>
+<li>zout</li>
+<li>peper</li>
+<li>jalapeno</li>
+<li>guacamole</li>
+</ul>
+<h2>Bereiding</h2>
+<ol>
+<li>Verwarm de oven voor op 180 graden. Snij de zoete aardappels (met schil) in
+   de lengte doormidden. Verpak de zoete aardappels per helft in aluminiumfolie en
+   besprenkel de schil met wat olijfolie. Leg de aardappels ongeveer 30 minuten in
+   de oven tot ze gaar zijn en de schil er makkelijk af gaat. Valt de schil er niet
+   vanzelf af? Laat ze dan nog iets langer poffen in de oven.</li>
+<li>Heb je geen zin of tijd om de zoete aardappels te poffen? Dan kun je de
+   aardappels schillen, in stukjes snijden en koken in een pan met kokend water.
+   De aardappels zijn in 10-15 minuten gaar. Dit scheelt tijd. Ik vind zelf
+   poffen net iets lekkerder, maar ik ga ook vaak genoeg voor deze 'weinig tijd'
+   optie!</li>
+<li>Laat intussen de zwarte bonen en mais uitlekken en doe in een grote kom,
+   samen met 100 gram feta en de Mexicaanse kruiden. Pel de ui en knoflook
+   en snij ze fijn. Voeg toe aan de kom. Hou je van pittig? Voeg dan ook wat
+   fijngehakte chilipeper of jalapeno peper toe. Proef zelf even hoeveel peper
+   je lekker vindt in het gerecht.</li>
+<li>Haal de aardappels uit de oven en ontdoe ze van de schil. Als het goed is
+   valt de schil er zo af. Prak de aardappels en voeg ze toe aan de bonen in de
+   grote kom. Roer, en breng het geheel op smaak met zout en peper.</li>
+<li>Nu ga je de wraps beleggen. Pak een wrap en doe er 2-3 flinke eetlepels van
+   het zoete aardappelmengsel op. Rol de wrap op en leg deze in een ingevette
+   ovenschaal. Herhaal dit met de overige wraps.</li>
+<li>Bestrijk de bovenkant van de wraps met tacosaus en strooi de geraspte kaas
+   erover. Bak de wraps ongeveer 10 minuten in de oven totdat ze goudbruin zijn.</li>
+<li>Haal de wraps uit de oven en garneer met wat creme fraiche en eventueel met
+   wat verse koriander en gesnipperde rode ui. That's it! Dit wordt genieten!
+   Lekker met een salade of wat guacamole met nacho chips.</li>
+</ol>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate"><!--LAST_MODIFIED--></time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>
