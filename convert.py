@@ -54,6 +54,7 @@ def main():
             print('WARNING: unexpected file:', fname)
     
     # index
+    recipes.sort()
     with open(os.path.join(DIR, 'index.html.raw'), 'w', encoding='utf-8') as findex:
         findex.write(header)
         findex.write('<ul>')
