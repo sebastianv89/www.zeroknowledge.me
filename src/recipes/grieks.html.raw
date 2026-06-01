@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Sebastian R. Verschoor</title>
+    <meta name="description" content="Personal website of Sebastian Verschoor">
+    <meta name="keywords" content="crypto, security, quantum">
+    <meta name="author" content="Sebastian Verschoor">
+    <meta name="viewport" content="width=device-width">
+    <link href="/style/screen.css" rel="stylesheet">
+    <link href="/img/favicon.png" rel="icon">
+    <!--<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="feed.xml"-->
+  </head>
+  
+  <body>
+    
+    <header>
+      <h1><a href="/"><span class="fade">zer</span>∅k<span class="fade">nowledge</span></a></h1>
+      <span class='subtitle'>Personal website of Sebastian Verschoor</span>
+      <nav>
+        <ul>
+          <!--<li><a href="/">Home</a></li>-->
+          <!--<li><a href="/blog/">Blog</a></li>-->
+          <!--<li><a href="/code/">Code</a></li>-->
+          <li><a href="/resume/">Resume</a></li>
+          <li><a href="/publications/">Publications</a></li>
+          <li><a href="/talks/">Talks</a></li>
+          <li><a href="/teaching/">Teaching</a></li>
+          <li><a href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+Bron: Nikos?
+<h1>Vier Griekse recepten</h1>
+<h2>Aubergine rolletjes in tomatensaus</h2>
+<h3>Ingrediënten</h3>
+<ul>
+<li>2 aubergines</li>
+<li>200 gr feta</li>
+<li>4 el Griekse yoghurt</li>
+<li>2 blikken tomaten blokjes</li>
+<li>4 el tomaten puree</li>
+<li>geraspte mozarella</li>
+<li>parmezaanse kaas</li>
+</ul>
+<h3>Bereiding</h3>
+<ol>
+<li>Verwarm de oven voor op ? graden</li>
+<li>Snijd de aubergine in plakken</li>
+<li>Grill de aubergine-plakken</li>
+<li>Mix de yoghurt en feta</li>
+<li>Doe de tomaat en tomatenpuree in de ovenschaal</li>
+<li>Rol de yoghurt in de aubergine-plakken</li>
+<li>Plaats de rolletjes in de ovenschaal</li>
+<li>Bedek met mozarella en kaas</li>
+<li>In de oven voor ? minuten</li>
+</ol>
+<h2>Kolokithokeftedes</h2>
+<h3>Ingrediënten</h3>
+<ul>
+<li>3 kleine courgettes</li>
+<li>200 gr feta</li>
+<li>basilicum</li>
+<li>munt</li>
+<li>2 eieren</li>
+<li>80 gr bloem</li>
+<li>limoen</li>
+</ul>
+<h3>Bereiding</h3>
+<p>??</p>
+<h2>Tzatziki</h2>
+<p>TODO: Volgens mij mis ik hier nog knoflook</p>
+<h3>Ingrediënten</h3>
+<ul>
+<li>1 komkommer</li>
+<li>500 gr Griekse yoghurt</li>
+<li>wijn azijn</li>
+<li>dille</li>
+<li>munt</li>
+</ul>
+<h3>Bereiding</h3>
+<ol>
+<li>Rasp de komkommer</li>
+<li>Meng de ingredienten</li>
+</ol>
+<h2>Spanakopita</h2>
+<h3>Ingrediënten</h3>
+<ul>
+<li>filodeeg</li>
+<li>450 gr spinazie</li>
+<li>1 ei</li>
+<li>150 gr feta</li>
+<li>boter</li>
+</ul>
+<h3>Bereiding</h3>
+<p>??</p>    </main>
+
+    <footer>
+	    <a id="license-icon" rel="license" href="https://creativecommons.org/licenses/by/4.0/"><img src="/img/cc.svg" width="20" height="20" alt="Creative Commons"><img src="/img/by.svg" width="20" height="20" alt="Creative Commons Attribution"></a>
+			<a id="observatory-badge" href="https://observatory.mozilla.org/analyze/zeroknowledge.me"><img alt="Mozilla HTTP Observatory Grade" height="20" src="https://img.shields.io/mozilla-observatory/grade-score/zeroknowledge.me?color=darkgray&logo=mozilla&style=flat-square"></a>
+      <p>
+        Last modified: <time pubdate="pubdate">2026-06-01</time>
+      </p>
+      <p>
+        <a href="https://www.github.com/sebastianv89/www.zeroknowledge.me">Website source</a>
+      </p>
+    </footer>
+  </body>
+</html>
